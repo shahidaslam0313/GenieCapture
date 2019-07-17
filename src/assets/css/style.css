@@ -697,7 +697,8 @@ body {
 }
 
 .com-table td {
-    padding: 14px 20px!important
+    padding: 14px 20px!important;
+    background: #fff;
 }
 
 .com-table tr>td:first-child {

@@ -44,21 +44,21 @@ export class HomeComponent implements OnInit{
     this.items = [
       {
         title: 'Give e-Learning Wings',
-        back: "url(https://web.geniecapture.com/sliders/banner_1.gif)",
+        back: "url(https://cloud.geniecapture.com/sliders/banner_1.gif)",
         para: 'GenieCapture propels your organization to the next level with Creation & Consumption of Highly Interactive e-Learning Content for your Training Audience.',
         button: 'Download',
         routes:'/pricing'
       },
       {
         title: 'Unbeatable Price - One Platform',
-        back: "url(https://web.geniecapture.com/sliders/banner_2.gif)",
+        back: "url(https://cloud.geniecapture.com/sliders/banner_2.gif)",
         para: 'GenieCapture accelerates your business and students by sharing knowledge and adopt software the Smart Way!',
         button: 'Subscribe',
         routes:'/pricing'
       },
       {
         title: 'Super-Fast, Super-Easy',
-        back: "url(https://web.geniecapture.com/sliders/banner_3.gif)",
+        back: "url(https://cloud.geniecapture.com/sliders/banner_3.gif)",
         para: 'GenieCapture makes e-Learning and Software Adoption a breeze with Highly Interactive Software & Video Simulation Training Content!',
         button: 'Free 7-Day Trial',
         routes:'/pricing'

@@ -12,7 +12,8 @@
     font-size: 18px;
     font-weight: 600;
     padding: 14px 20px!important;
-    text-align: center
+    text-align: center;
+    background: #fff;
 }
 
 .com-table tr>td:first-child {

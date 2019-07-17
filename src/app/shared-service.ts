@@ -10,7 +10,7 @@ import swal from "sweetalert2";
 export class SharedData {
   currentProducts;
   errorMsg;
-  url="https://web.geniecapture.com/Installer/GenieCapture.exe";
+  url="https://cloud.geniecapture.com/Installer/GenieCapture.exe";
   categorySubject = new BehaviorSubject<any>("");
   stateSubject = new BehaviorSubject<any>("");
   agencySubject = new BehaviorSubject<any>("");

@@ -240,7 +240,9 @@ h3 {
     background: #fff;
     padding: 10px 0
 }
-
+.interest-area .arrow-left,.interest-area .arrow-right{
+  color: #000;
+}
 .interest-area .container>strong {
     font-size: 22px;
     line-height: 26px;
@@ -1816,28 +1818,6 @@ h3 {
     font-weight: 500
 }
 
-.forms-fix .mat-input-infix {
-    border-top: 0 solid transparent;
-}
-
-.forms-fix .mat-input-infix .mat-input-underline {
-    bottom: 0.296875em;
-}
-
-.forms-fix .mat-input-subscript-wrapper {
-    margin-top: 2px;
-    height: 25px;
-}
-
-.forms-fix .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
-    -webkit-transform: translateY(-15px) scale(.75) perspective(100px) translateZ(.001px);
-    transform: translateY(-4px) scale(.75) perspective(100px) translateZ(.001px);
-    -ms-transform: translateY(-15px) scale(.75);
-}
-
-.mat-form-field-empty.mat-form-field-placeholder {
-    /* color: #757575 !important; */
-}
 
 .mat-focused .mat-form-field-required-marker {
     color: rgb(212, 22, 22);
@@ -1845,10 +1825,6 @@ h3 {
 
 .mat-form-field-suffix {
     font-size: 14px;
-}
-
-.mat-input-infix {
-    /* padding: 13px 0 */
 }
 
 
@@ -2276,7 +2252,7 @@ hr {
 
 .mat-input-subscript-wrapper {
     font-size: 12px;
-    margin-top: 4px;
+    margin-top: 0;
 }
 
 .current-placeholder .mat-form-field-suffix .mat-icon {
@@ -2594,62 +2570,6 @@ text tspan {
     transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(.001px);
     -ms-transform: translateY(-0.5125em) scale(.75);
 }
-
-.support-placeholder .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
-    transform: translateY(1px) scale(.75) perspective(100px) translateZ(.001px);
-    -ms-transform: translateY(-1.28125em) scale(.75);
-}
-
-.support-placeholder .mat-input-infix {
-    padding: 1.275em 0 .275em;
-}
-
-.change-placeholder .mat-input-infix {
-    padding: 0.89em 0 .175em;
-}
-
-.change-placeholder .mat-input-placeholder-wrapper {
-    top: -1.04375em !important;
-    padding-top: .84375em;
-    font-size: 16px;
-    overflow: visible;
-}
-
-.change-placeholder .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
-    transform: translateY(-0.18125em) scale(.75) perspective(100px) translateZ(.001px);
-    -ms-transform: translateY(-1.28125em) scale(.75);
-}
-
-.change-placeholder .mat-input-underline {
-    background-color: rgba(0, 0, 0, .12);
-    bottom: 1.39em;
-}
-
-.change-placeholder .mat-input-placeholder.mat-empty {
-    top: 1.1em;
-}
-
-.register-placeholder .mat-input-infix {
-    padding: 0.89em 0 .475em;
-}
-
-.register-placeholder .mat-input-placeholder-wrapper {
-    top: -1.04375em !important;
-    padding-top: .84375em;
-    font-size: 16px;
-    overflow: visible;
-}
-
-.register-placeholder .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
-    transform: translateY(-0.38125em) scale(.75) perspective(100px) translateZ(.001px);
-    -ms-transform: translateY(-1.28125em) scale(.75);
-}
-
-.register-placeholder .mat-input-underline {
-    background-color: rgba(0, 0, 0, .12);
-    bottom: 1.39em;
-}
-
 .sh-products-area .table-normal td {
     font-size: 16px
 }
@@ -3392,10 +3312,14 @@ body::-webkit-scrollbar-thumb:hover {
  /* ---------------------Sh-----------------------  */
  .mat-form-field-placeholder{
   top: 1.98125em;
+  letter-spacing: normal;
  }
- .mat-form-field-placeholder,.mat-select-value, .mat-select-trigger{
+ .mat-select-value, .mat-select-trigger{
   letter-spacing: normal;
   padding: 3px;
+ }
+ .mat-form-field.mat-focused .mat-form-field-label{
+   color: #000;
  }
 .mat-form-field{
   display: block;
@@ -3413,7 +3337,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .mat-input-subscript-wrapper {
   font-size: 11px;
-  margin-top: -3px;
 }
 .payment-card  .mat-form-field-placeholder {
   top: 1.98125em;
@@ -3432,6 +3355,9 @@ body::-webkit-scrollbar-thumb:hover {
 .mat-select-panel .mat-optgroup-label, .mat-select-panel .mat-option {
   line-height: 2em;
   height: 2em;
+}
+.Change-Password .mat-form-field-placeholder {
+  top: 1.58125em;
 }
 @media (max-width:540px){
   .btn.btn-hero{

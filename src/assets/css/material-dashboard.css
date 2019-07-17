@@ -2172,7 +2172,6 @@ svg {
 
 .mat-input-subscript-wrapper {
     font-size: 75%;
-    margin-top: 1.00416667em;
     top: calc(100% - 1.72916667em)
 }
 
@@ -13101,6 +13100,7 @@ footer .btn {
 
 .profile .mat-input-infix {
     padding: 1.04em 0 .175em;
+    border: none;
 }
 
 .payment-palceholder .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {

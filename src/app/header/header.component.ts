@@ -175,7 +175,7 @@ export class HeaderComponent implements OnInit {
       if (res.message == "Success") {
         let link = document.createElement("a");
         link.download = "GenieCapture.exe";
-        link.href = "https://web.geniecapture.com/Installer/GenieCapture.exe";
+        link.href = "https://cloud.geniecapture.com/Installer/GenieCapture.exe";
         link.click();
       } else if (res.message == "False") {
         this._shareData.AlertBox("warning", "You have already downloaded please contact us");

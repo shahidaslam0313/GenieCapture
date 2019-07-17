@@ -1,0 +1,36 @@
+.mat-form-field {
+    width: 100%!important;
+    font-size: 24px;
+    color: #555 !important;
+    padding: 0 0 2px;
+    font-weight: 600;
+}
+
+.error-block {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 8px;
+}
+
+#align {
+    text-align: center;
+}
+
+textarea {
+    width: 100%!important;
+    font-size: 24px;
+    color: #555 !important;
+    font-weight: 600;
+}
+
+textarea::-webkit-scrollbar {
+    width: 9px;
+    background-color: rgb(219, 219, 219);
+}
+
+textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.116);
+    background-color: #4f4f4f;
+}

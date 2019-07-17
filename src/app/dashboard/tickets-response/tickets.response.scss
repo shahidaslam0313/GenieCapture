@@ -1,0 +1,97 @@
+.card {
+    padding: 3px;
+    width: 100%;
+    max-width: 690px;
+    border-radius: 4px;
+    margin: 20px 0;
+    .noRecord {
+        display: flex;
+        justify-content: center;
+        border-top: none !important;
+        border: 1px solid #c3bebe;
+        margin-top: -18px;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .mat-card-content {
+        border: 1px solid #c3bebe;
+        max-height: 400px;
+        height: 100%;
+        overflow: auto;
+        .table {
+            border: 1px solid #c3bebe;
+        }
+        .table-header {
+            background-color: #000000;
+            font-size: 16px;
+        }
+        .table>thead>tr>th {
+            padding: 9px !important;
+            color: #fff;
+        }
+        .table>thead>tr>td {
+            font-weight: 500 !important
+        }
+    }
+    .positive {
+        color: #68a807;
+    }
+    .negative {
+        color: #f80000;
+    }
+    span {
+        font-weight: 500 !important
+    }
+}
+
+.admin-home-palceholder {
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: -18px;
+    justify-content: space-between;
+    span {
+        font-weight: 600;
+        color: #000;
+        margin: 9px 2px !important;
+        font-size: 14px;
+    }
+    .mat-icon {
+        color: #000;
+    }
+}
+
+.mat-mini-fab.mat-accent {
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@mixin mat-icon-size($size: 24px) {
+    font-size: $size;
+    height: $size;
+    width: $size;
+}
+
+.mat-icon {
+    @include mat-icon-size(26px);
+}
+
+.tickets {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 30px 0px;
+    .mat-card-header {
+        .mat-card-title {
+            color: black;
+            font-size: 24px;
+            padding: 10px 15px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+    }
+}

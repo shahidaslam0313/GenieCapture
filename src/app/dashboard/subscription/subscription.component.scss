@@ -1,0 +1,57 @@
+.layout {
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.mat-card {
+    padding: 3px;
+    .mat-card-header {
+        background-color: #000;
+        border-radius: 2px;
+        justify-content: center;
+        .mat-card-title {
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 5px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.table {
+    border: 1px solid #c3bebe;
+}
+
+.table-header {
+    background-color: #f4f4f499;
+}
+
+.table>thead>tr>th {
+    padding: 9px !important;
+    font-size: 16px !important;
+}
+
+.success {
+    color: #68a807;
+}
+
+.danger {
+    color: #cd0000;
+}
+
+.no_save_card {
+    font-size: 18px;
+    font-weight: 500 !important;
+    padding: 100px;
+    text-align: center;
+}
+
+.mat-card-content {
+    border: 1px solid #c3bebe;
+}
+
+a {
+    color: #0c6fc0 !important
+}

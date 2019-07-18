@@ -95,3 +95,11 @@
 a {
     color: #0c6fc0 !important
 }
+@media (max-width:540px){
+  .table > thead > tr > th {
+    padding: 2px !important;
+    font-size: 14px !important;
+    word-break: break-word !important;
+}
+}
+

@@ -281,6 +281,7 @@ mat-form-field {
 
 .table {
     border: 1px solid #c3bebe;
+    table-layout: fixed;
 }
 
 .cards {
@@ -622,7 +623,8 @@ h3 {
     font-weight: 550 !important;
     color: #000;
     font-size: 14px;
-    margin-left: 10px;
+    white-space: normal;
+    word-break: break-all;
 }
 
 .btn-submit[disabled] {
@@ -648,4 +650,11 @@ h3 {
 }
 .add-button button{
   max-width: 40%;
+}
+@media (max-width:540px){
+  .table > thead > tr > th {
+    padding: 2px !important;
+    font-size: 14px !important;
+    word-break: break-word !important;
+}
 }

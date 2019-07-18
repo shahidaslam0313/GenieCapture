@@ -46,6 +46,15 @@
             window.setTimeout(loadDeferredStyles, 0);
         });
         else window.addEventListener('load', loadDeferredStyles);
+
+        $(function(){
+          $("#show_sidebar").click(function(){
+            $("#sidebar_visible").show("slow");
+          });
+          $("#close_sidebar").click(function(){
+            $("#sidebar_visible").hide("slow");
+          });
+        });
     </script>
 
 </body>

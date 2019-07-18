@@ -4,12 +4,15 @@
     <div class="container-fluid">
         <div class="row">
             <div>
-                <div class="sidebar custom">
+                <div class="sidebar custom" id="sidebar_visible">
                     <app-sidebar-cmp></app-sidebar-cmp>
                 </div>
             </div>
 
             <div class="childview">
+                <button class="btn btn-rose" id="show_sidebar">
+                  <span><i class="fa fa-bars"></i></span>  User Dashboard
+                  </button>
                 <div class="bodysetter">
                     <router-outlet></router-outlet>
                 </div>

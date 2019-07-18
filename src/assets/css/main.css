@@ -3359,6 +3359,11 @@ body::-webkit-scrollbar-thumb:hover {
 .Change-Password .mat-form-field-placeholder {
   top: 1.58125em;
 }
+.support-placeholder .mat-form-field-placeholder {
+  top: 1.58125em;
+}
+
+
 @media (max-width:540px){
   .btn.btn-hero{
     margin: 0 auto !important;

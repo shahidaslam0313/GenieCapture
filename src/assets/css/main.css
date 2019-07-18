@@ -3362,7 +3362,18 @@ body::-webkit-scrollbar-thumb:hover {
 .support-placeholder .mat-form-field-placeholder {
   top: 1.58125em;
 }
+.support-placeholder textarea.mat-input-element{
+min-height: 100px;
+}
+mat-select.mat-form-field-flex {
+  height: 30px;
+}
 
+@media (max-width:991px){
+  .navbar-nav>li:last-child:before{
+    display: none;
+  }
+}
 
 @media (max-width:540px){
   .btn.btn-hero{

@@ -60,7 +60,8 @@ import {
 } from './layouts/lyout/admin-layout.component';
 import {
     AdminComponent
-} from './layouts/superadmin/admin-layout.component'
+} from './layouts/superadmin/admin-layout.component';
+
 import {
     VerifyCodeComponent
 } from './verifycode/verifycode.component'
@@ -127,6 +128,7 @@ export const AppRoutes: Routes = [{
                 component: LoginComponent,
                 canActivate: [OnlyLoggedOutUsersGuard],
             },
+            
             {
                 path: 'contact',
                 component: ContactUsComponent

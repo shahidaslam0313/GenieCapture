@@ -1957,7 +1957,8 @@ hr {
     top: 90%;
     position: absolute;
     visibility: hidden;
-    z-index: 9
+    z-index: 9;
+    min-width: 210px;
 }
 
 .nav-vanders {
@@ -3361,6 +3362,9 @@ body::-webkit-scrollbar-thumb:hover {
 .support-placeholder textarea.mat-input-element{
 min-height: 100px;
 }
+.mainFlex textarea.mat-input-element{
+  min-height: 100px;
+}
 .mat-form-field-type-mat-select .mat-form-field-flex {
   height: 30px;
 }
@@ -3403,6 +3407,15 @@ min-height: 100px;
 .mat-slide-toggle-content{
   margin-left: 10px;
 }
+.input.mat-input-element{
+  color: #000;
+}
+.contact-us .mat-input-infix{
+  border-top: none;
+}
+.mainFlex .mat-form-field-placeholder {
+  top: 1.58125em;
+}
 @media (min-width:992px){
   #sidebar_visible{
     display: block !important;
@@ -3421,6 +3434,31 @@ min-height: 100px;
 #sidebar_visible{
   display: none;
 }
+.how-it-works h1{
+  font-size: 34px
+}
+.how-it-works h3 {
+  font-size: 24px!important;
+  margin: 0;
+}
+  .how-it-works h6 {
+      font-size: 16px;
+  }
+  .footer {
+    padding: 0 !important;
+  }
+  .navbar-nav>li>a{
+    padding: 5px !important;
+  }
+  .heading {
+    font-size: 34px !important;
+  }
+  .what-is-geniecapture-img{
+    text-align: center !important
+  }
+  .what-is-geniecapture-img img{
+    width: 300px !important;
+  }
 }
 @media (max-width:540px){
   .btn.btn-hero{

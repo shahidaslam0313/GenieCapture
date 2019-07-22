@@ -603,7 +603,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    padding: 70px 0;
+    padding-bottom: 70px;
     color: #fff
 }
 
@@ -927,7 +927,7 @@ body {
     margin: 0!important
 }
 
-.w-i-rfpgurus-img {
+.what-is-geniecapture-img img {
     width: 100%
 }
 

@@ -31,6 +31,7 @@ import {BaseRequestOptions} from '@angular/http';
 import {PreloaderService} from './serv/preloader-service';
 import {XHRBackend, RequestOptions} from '@angular/http';
 import {HttpService} from './serv/http-service';
+import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 import 'hammerjs';
 import {
     MatAutocompleteModule,
@@ -220,6 +221,7 @@ export class MaterialModule {}
         MatTableModule
     ],
     declarations: [
+        DashboardComponent,
         AdminComponent,
         SuperAdminComponent,
         SidebarComponent,

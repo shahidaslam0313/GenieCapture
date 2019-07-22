@@ -106,6 +106,7 @@ import {
 import {
     QueryResponseComponent
 } from './dashboard/tickets-response/tickets.response';
+import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 export const AppRoutes: Routes = [{
         path: '',
         component: AuthLayoutComponent,
@@ -137,6 +138,12 @@ export const AppRoutes: Routes = [{
                 path: 'trackyourticket/:code',
                 component: QueryResponseComponent
             },
+          
+            {
+                path: 'superadmindashboard',
+                component: DashboardComponent
+            },
+          
             {
                 path: 'how-it-works',
                 component: HowItWorksComponent

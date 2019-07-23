@@ -584,7 +584,7 @@ app-header {
 .desc-banner {
     min-height: 400px;
     padding: 70px 0;
-    background-image: url("../../assets/img/img-01.jpg");
+    background-image: url("assets/img/img-01.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -619,7 +619,7 @@ app-header {
 .success-for-business {
     @include font(18px,
     25px);
-    background-image: url("../../assets/img/img-02.jpg");
+    background-image: url("assets/img/img-02.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: #fefefe;
@@ -906,7 +906,7 @@ app-user-sidebar {}
 }
 
 .about-1 {
-    background-image: url("../../assets/img/img-03.jpg");
+    background-image: url("assets/img/img-03.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% auto;
@@ -972,7 +972,7 @@ app-user-sidebar {}
 .about-3 {
     @include font(22px,
     36px);
-    background-image: url("../../assets/img/img-04.jpg");
+    background-image: url("assets/img/img-04.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: bottom;
@@ -1542,7 +1542,7 @@ mat-form-field.mat-form-field {
 }
 
 .pricing-page {
-    background-image: url("../../assets/img/pricing.jpg");
+    background-image: url("assets/img/pricing.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;

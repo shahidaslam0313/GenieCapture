@@ -736,7 +736,7 @@ h3 {
 .desc-banner {
     min-height: 400px;
     padding: 70px 0;
-    background-image: url(../../assets/img/img-01.jpg);
+    background-image: url(assets/img/img-01.jpg);
     background-attachment: fixed;
     background-position: right;
     color: #fafafa
@@ -773,7 +773,7 @@ h3 {
 .success-for-business {
     font-size: 18px;
     line-height: 25px;
-    background-image: url(../../assets/img/img-02.jpg);
+    background-image: url(assets/img/img-02.jpg);
     color: #fefefe;
     position: relative;
     padding: 40px 0
@@ -1122,7 +1122,7 @@ mat-tab-group .mat-tab-label {
 }
 
 .about-1 {
-    background-image: url(../../assets/img/img-03.jpg);
+    background-image: url(assets/img/img-03.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% auto;
@@ -1192,7 +1192,7 @@ mat-tab-group .mat-tab-label {
 .about-3 {
     font-size: 22px;
     line-height: 36px;
-    background-image: url(../../assets/img/img-04.jpg);
+    background-image: url(assets/img/img-04.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: bottom;
@@ -1846,7 +1846,7 @@ mat-form-field.mat-form-field {
 }
 
 .pricing-page {
-    background-image: url(../../assets/img/pricing.jpg);
+    background-image: url(assets/img/pricing.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh
@@ -1957,7 +1957,8 @@ hr {
     top: 90%;
     position: absolute;
     visibility: hidden;
-    z-index: 9
+    z-index: 9;
+    min-width: 210px;
 }
 
 .nav-vanders {
@@ -2494,11 +2495,6 @@ text tspan {
     font-size: 16px!important;
     font-weight: 500!important
 }
-
-
-/* .sh-card-content .mat-select-panel {
-    max-width: 220px!important
-} */
 
 .sh-products-area {
     padding-top: 40px
@@ -3361,6 +3357,9 @@ body::-webkit-scrollbar-thumb:hover {
 .support-placeholder textarea.mat-input-element{
 min-height: 100px;
 }
+.mainFlex textarea.mat-input-element{
+  min-height: 100px;
+}
 .mat-form-field-type-mat-select .mat-form-field-flex {
   height: 30px;
 }
@@ -3403,6 +3402,15 @@ min-height: 100px;
 .mat-slide-toggle-content{
   margin-left: 10px;
 }
+.input.mat-input-element{
+  color: #000;
+}
+.contact-us .mat-input-infix{
+  border-top: none;
+}
+.mainFlex .mat-form-field-placeholder {
+  top: 1.58125em;
+}
 @media (min-width:992px){
   #sidebar_visible{
     display: block !important;
@@ -3421,6 +3429,31 @@ min-height: 100px;
 #sidebar_visible{
   display: none;
 }
+.how-it-works h1{
+  font-size: 34px
+}
+.how-it-works h3 {
+  font-size: 24px!important;
+  margin: 0;
+}
+  .how-it-works h6 {
+      font-size: 16px;
+  }
+  .footer {
+    padding: 0 !important;
+  }
+  .navbar-nav>li>a{
+    padding: 5px !important;
+  }
+  .heading {
+    font-size: 34px !important;
+  }
+  .what-is-geniecapture-img{
+    text-align: center !important
+  }
+  .what-is-geniecapture-img img{
+    width: 300px !important;
+  }
 }
 @media (max-width:540px){
   .btn.btn-hero{

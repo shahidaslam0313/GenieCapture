@@ -33,7 +33,7 @@
                         <mat-error *ngIf="register.controls['email'].invalid">
                             {{ emailErrMsg() }}
                         </mat-error>
-                        <mat-hint *ngIf="emailexist" style="color:#f44336">This email already exist.</mat-hint>
+                        <mat-hint *ngIf="emailexist" style="color:#c00">This email already exist.</mat-hint>
                     </mat-form-field>
                     <mat-form-field class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <input matInput placeholder="Phone No." class="input-size" required name="phone" [textMask]="{mask: mask}" formControlName="contact">

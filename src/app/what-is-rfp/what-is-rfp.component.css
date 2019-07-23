@@ -61,11 +61,6 @@ span.bordered-icon:after {
     background-image: url("../../assets/img/who-2.jpg");
 }
 
-.col-md-6 {
-    margin-top: 50px;
-    padding-top: 10px;
-}
-
 .col-md-6 p {
     text-align: left;
     text-justify: inter-word;

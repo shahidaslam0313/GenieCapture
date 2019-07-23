@@ -1,3 +1,6 @@
+.curser-pointer{
+  cursor: pointer;
+}
 .search-outer {
     z-index: 99999;
     position: fixed;

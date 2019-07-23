@@ -24,9 +24,9 @@
                     </mat-error>
                 </mat-form-field>
            
-            <div style="display:flex;flex-flow:row;justify-content: space-between;flex-wrap:wrap">
+            <div class="stay-forgot">
 
-                <div style="display:flex;flex-direction:column;align-items:flex-start">
+                <div class="innerdiv">
                     <mat-slide-toggle [checked]="agent === 'true' ? true : false" (change)="setValue( agent, $event )">
                         <span class="stay"> Stay Signed In</span>
                     </mat-slide-toggle>
@@ -47,7 +47,7 @@
             <button class=" btn button">Sign In</button>
         </form>
         <div>
-            <div style="display:flex;flex-direction: row;justify-content:center;margin-top: 15px">
+            <div class="noAcount">
                 <span id="sign-up">No Account Yet ? </span>
                 <a class="sign-up" routerLink="/sign-up" id="sign"> Sign Up </a>
             </div>

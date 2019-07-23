@@ -29,7 +29,7 @@ export class SearchPaymentDialogComponent implements OnInit {
   {value:false,viewValue:"Expired"}]
   package=[{value:0,viewValue:"Free Trial"},
   {value:1,viewValue:"Monthly"},
-  {value:1,viewValue:"Yearly"}]
+  {value:12,viewValue:"Yearly"}]
   cards=[{
     value: 'Visa',
     viewValue: 'Visa Card'

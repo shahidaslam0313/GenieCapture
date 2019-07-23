@@ -396,15 +396,15 @@
     }
 
     .slides .slide-1 {
-      background-image: url(../../assets/slides/banner-1.jpg);
+      background-image: url('../../assets/slides/banner-1.jpg');
     }
 
     .slides .slide-2 {
-      background-image: url(../../assets/slides/banner-2.jpg);
+      background-image: url('../../assets/slides/banner-2.jpg');
     }
 
     .slides .slide-3 {
-      background-image: url(../../assets/slides/banner-3.jpg);
+      background-image: url('../../assets/slides/banner-3.jpg');
     }
 
     .slider-div {

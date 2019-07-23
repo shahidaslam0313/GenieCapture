@@ -35,8 +35,7 @@ You can add global styles to this file, and also import other style files
 
 .error-block {
     display: flex !important;
-    justify-content: flex-end !important;
-    /* margin-top: 5px; */
+    justify-content: flex-start !important;
 }
 
 @media (max-width:991px) {
@@ -231,9 +230,7 @@ body::-webkit-scrollbar-thumb {
         display: block!important;
         margin: 0
     }
-    /* .nav-home ul li+li {
-        border-top: 1px solid #333
-    } */
+
     .navbar-toggle .icon-bar {
         background: #333!important
     }
@@ -403,13 +400,6 @@ body {
     font-weight: 700
 }
 
-.subscribe .input-group-btn {
-    /* padding: 0 */
-}
-
-.subscribe .form-group {
-    /* margin: 3px 0 0 */
-}
 
 .subscribe .btn,
 .subscribe .btn:hover {
@@ -646,7 +636,7 @@ body {
 }
 
 #f-c {
-    /* padding: 20px 0; */
+
     background: #fafafa
 }
 
@@ -929,15 +919,11 @@ body {
     border: 5px solid #ff5958;
     border-radius: 55px
 }
-
-* {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .receipt-items table {
     background: #fff;
     border-radius: 5px
 }
+
 
 .receipt-items table tr td:first-child {
     color: #000
@@ -990,10 +976,12 @@ body {
     margin: 0!important
 }
 
-.what-is-geniecapture-img img {
-    width: 100%
+.what-is-geniecapture-img{
+  text-align: center;
 }
-
+.what-is-geniecapture-img img{
+  width: 300px !important;
+}
 .advance-serach-container {
     margin: 68px 0
 }
@@ -1516,19 +1504,12 @@ ul li {
     -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3)
 }
 
-
-/* .mat-select .mat-select-trigger {
-    padding: 0 8px
-} */
-
 *,
 .btn {
     -webkit-tap-highlight-color: transparent
 }
 
-h3 {
-    /* margin: 0 0 20px!important */
-}
+
 
 .card a {
     display: inline-block
@@ -3078,7 +3059,7 @@ dialog-overview-example-dialog .forgot-pass {
 .btn {
     border-radius: 50px !important;
     margin-bottom: 4px;
-    padding: 0px 10px;
+    padding: 5px 10px;
 }
 
 .sign-up .form-group input {
@@ -3129,10 +3110,6 @@ dialog-overview-example-dialog .forgot-pass {
     font-weight: 500
 }
 
-.btn {
-    /* font-size: 17px!important;
-    font-weight: 600!important */
-}
 
 h1,
 h2,
@@ -3243,7 +3220,6 @@ hr {
 
 .inner .nav-home ul li,
 .nav-home ul li {
-    display: inline-block;
     vertical-align: middle;
     position: relative;
     margin-bottom: 0;
@@ -3348,7 +3324,9 @@ hr {
 }
 
 .why-rfp-sublist>li>a>i {
-    font-size: 15px
+  font-size: 15px;
+  text-align: center;
+  margin-right: 5px;
 }
 
 .mat-column-rfp_number>a,
@@ -3609,6 +3587,9 @@ hr {
 
 ::ng-deep .mat-form-field.test .mat-form-field-invalid .mat-form-field-placeholder {
     color: #000 !important;
+}
+.mat-input-placeholder{
+  color:rgba(0,0,0,.54)!important;
 }
 
 .mat-input-placeholder-wrapper {
@@ -4545,9 +4526,6 @@ a.sort.desc::after {
     margin: 0!important
 }
 
-.btn {
-    /* border-radius: 50px!important */
-}
 
 .btn:hover,
 a.btn:hover {
@@ -4614,7 +4592,6 @@ a.btn:hover {
 }
 
 .mat-error {
-    /* display: flex; */
     justify-content: flex-end;
 }
 
@@ -4648,6 +4625,10 @@ body::-webkit-scrollbar-thumb:hover {
     margin-top: 43px!important
 }
  /* ---------------------Sh-----------------------  */
+ .img-holder{
+  max-width: 200px;
+  margin: 0 auto;
+ }
  .mat-form-field-placeholder{
   top: 1.98125em;
   letter-spacing: normal;
@@ -4656,15 +4637,15 @@ body::-webkit-scrollbar-thumb:hover {
   letter-spacing: normal;
   padding: 3px;
  }
- .mat-form-field.mat-focused .mat-form-field-label{
-   color: #000;
+ .mat-focused .mat-input-placeholder{
+   color: #000 !important;
  }
 .mat-form-field{
   display: block;
   width: 100%;
 }
 .signup_login .mat-form-field-placeholder {
-  top: 1.98125em;
+  top: 1.58125em;
 }
 .signup_login .mat-input-element{
   font-size: 24px;
@@ -4797,9 +4778,7 @@ min-height: 100px;
   .what-is-geniecapture-img{
     text-align: center !important
   }
-  .what-is-geniecapture-img img{
-    width: 300px !important;
-  }
+
 }
 @media (max-width:540px){
   .btn.btn-hero{

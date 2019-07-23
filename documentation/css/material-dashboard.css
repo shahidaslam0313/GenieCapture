@@ -91,7 +91,7 @@
     box-sizing: border-box;
     width: 14px;
     height: 14px;
-    border-color: #9c27b0;
+    border-color: #000;
     left: -10px;
     top: -6px;
     cursor: pointer;
@@ -194,11 +194,11 @@
 }
 
 .slider.noUi-connect {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .slider .noUi-handle {
-    border-color: #9c27b0;
+    border-color: #000;
 }
 
 .slider.slider-info .noUi-connect,
@@ -2141,7 +2141,7 @@ svg {
 
 .mat-calendar-body-selected,
 .mat-calendar-body-selected:hover {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFFFFF;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
@@ -2204,11 +2204,11 @@ svg {
 }
 
 .mat-input-ripple {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .mat-focused .mat-input-placeholder {
-    color: #9c27b0;
+    color: #000;
 }
 
 .mat-input-element:disabled {
@@ -2459,7 +2459,7 @@ NOTE: use percentage font sizes or else old IE chokes
 .open>.fc button.btn-primary.dropdown-toggle,
 .open>.fc button.btn-primary.dropdown-toggle:focus,
 .open>.fc button.btn-primary.dropdown-toggle:hover {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFFFFF;
 }
 
@@ -2526,7 +2526,7 @@ fieldset[disabled] .fc button.btn-primary.active {
 .fc button.btn-simple,
 .fc button.btn-primary.btn-simple {
     background-color: transparent;
-    color: #9c27b0;
+    color: #000;
     box-shadow: none;
 }
 
@@ -2537,7 +2537,7 @@ fieldset[disabled] .fc button.btn-primary.active {
 .fc button.btn-primary.btn-simple:focus,
 .fc button.btn-primary.btn-simple:active {
     background-color: transparent;
-    color: #9c27b0;
+    color: #000;
 }
 
 .fc button[disabled],
@@ -4060,34 +4060,34 @@ be a descendant of the grid when it is being dragged.
 }
 
 .wizard-card[data-color="purple"] .moving-tab {
-    background-color: #9c27b0;
+    background-color: #000;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
 
 .wizard-card[data-color="purple"] .picture:hover {
-    border-color: #9c27b0;
+    border-color: #000;
 }
 
 .wizard-card[data-color="purple"] .choice:hover .icon,
 .wizard-card[data-color="purple"] .choice.active .icon {
-    border-color: #9c27b0;
-    color: #9c27b0;
+    border-color: #000;
+    color: #000;
 }
 
 .wizard-card[data-color="purple"] .form-group .form-control {
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#000, #000), linear-gradient(#D2D2D2, #D2D2D2);
 }
 
 .wizard-card[data-color="purple"] .checkbox input[type=checkbox]:checked+.checkbox-material .check {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .wizard-card[data-color="purple"] .radio input[type=radio]:checked~.check {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .wizard-card[data-color="purple"] .radio input[type=radio]:checked~.circle {
-    border-color: #9c27b0;
+    border-color: #000;
 }
 
 .wizard-card[data-color="green"] .moving-tab {
@@ -4608,12 +4608,12 @@ be a descendant of the grid when it is being dragged.
 .ct-series-d .ct-line,
 .ct-series-d .ct-bar,
 .ct-series-d .ct-slice-donut {
-    stroke: #9c27b0;
+    stroke: #000;
 }
 
 .ct-series-d .ct-slice-pie,
 .ct-series-d .ct-area {
-    fill: #9c27b0;
+    fill: #000;
 }
 
 .ct-series-e .ct-point,
@@ -5225,7 +5225,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .ct-purple {
-    stroke: #9c27b0 !important;
+    stroke: #000 !important;
 }
 
 .ct-azure {
@@ -5313,7 +5313,7 @@ be a descendant of the grid when it is being dragged.
 
 .mat-option:hover:not(.mat-option-disabled),
 .mat-option:focus:not(.mat-option-disabled) {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFFFFF;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
@@ -5733,7 +5733,7 @@ select.selectpicker {
 
 .select-with-transition {
     border: 0 !important;
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#000, #000), linear-gradient(#D2D2D2, #D2D2D2);
     background-size: 0 2px, 100% 1px;
     background-repeat: no-repeat;
     background-position: center bottom, center calc(100% - 1px);
@@ -5755,7 +5755,7 @@ select.selectpicker {
 
 .btn-group.bootstrap-select.show-tick.open .select-with-transition {
     outline: none !important;
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2) !important;
+    background-image: linear-gradient(#000, #000), linear-gradient(#D2D2D2, #D2D2D2) !important;
     background-size: 100% 2px, 100% 1px !important;
     box-shadow: none;
     transition-duration: 0.3s !important;
@@ -6007,7 +6007,7 @@ h2.title {
 }
 
 .text-primary {
-    color: #9c27b0;
+    color: #000;
 }
 
 .text-danger {
@@ -6442,7 +6442,7 @@ h2.title {
 }
 
 .sidebar[data-active-color="purple"] li.active>a {
-    background-color: #9c27b0;
+    background-color: #000;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
 
@@ -6964,7 +6964,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-default.active {
 .open>.navbar .navbar-nav>li>a.btn.btn-primary.dropdown-toggle,
 .open>.navbar .navbar-nav>li>a.btn.btn-primary.dropdown-toggle:focus,
 .open>.navbar .navbar-nav>li>a.btn.btn-primary.dropdown-toggle:hover {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFFFFF;
 }
 
@@ -7031,7 +7031,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-primary.active {
 .btn.btn-primary.btn-simple,
 .navbar .navbar-nav>li>a.btn.btn-primary.btn-simple {
     background-color: transparent;
-    color: #9c27b0;
+    color: #000;
     box-shadow: none;
 }
 
@@ -7042,7 +7042,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-primary.active {
 .navbar .navbar-nav>li>a.btn.btn-primary.btn-simple:focus,
 .navbar .navbar-nav>li>a.btn.btn-primary.btn-simple:active {
     background-color: transparent;
-    color: #9c27b0;
+    color: #000;
 }
 
 .btn.btn-info,
@@ -8085,7 +8085,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-rose.active {
 
 .btn-group.open>.dropdown-toggle.btn.btn-primary,
 .btn-group-vertical.open>.dropdown-toggle.btn.btn-primary {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .btn-group.open>.dropdown-toggle.btn.btn-success,
@@ -8218,13 +8218,13 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-rose.active {
 @keyframes color {
     100%,
     0% {
-        stroke: #9c27b0;
+        stroke: #000;
     }
     50% {
         stroke: #ff9800;
     }
     100% {
-        stroke: #9c27b0;
+        stroke: #000;
     }
 }
 
@@ -8297,7 +8297,7 @@ h6,
 }
 
 a {
-    color: #9c27b0;
+    color: #000;
 }
 
 a:hover,
@@ -8677,7 +8677,7 @@ output {
 }
 
 .label.label-primary {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .label.label-success {
@@ -8703,7 +8703,7 @@ output {
 .form-control,
 .form-group .form-control {
     border: 0;
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#000, #000), linear-gradient(#D2D2D2, #D2D2D2);
     background-size: 0 2px, 100% 1px;
     background-repeat: no-repeat;
     background-position: center bottom, center calc(100% - 1px);
@@ -8781,14 +8781,14 @@ fieldset[disabled] .form-group .form-control {
 
 .form-group.is-focused .form-control {
     outline: none;
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#000, #000), linear-gradient(#D2D2D2, #D2D2D2);
     background-size: 100% 2px, 100% 1px;
     box-shadow: none;
     transition-duration: 0.3s;
 }
 
 .form-group.is-focused .form-control .material-input:after {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .form-group.is-focused.form-info .form-control {
@@ -9503,7 +9503,7 @@ select.form-control[multiple],
 }
 
 .alert.alert-primary i {
-    color: #9c27b0;
+    color: #000;
 }
 
 .alert.alert-rose i {
@@ -9661,7 +9661,7 @@ select.form-control[multiple],
 
 .table-shopping .td-name a:hover,
 .table-shopping .td-name a:focus {
-    color: #9c27b0;
+    color: #000;
 }
 
 .table-shopping .td-number {
@@ -9858,7 +9858,7 @@ fieldset[disabled] .form-group.is-focused .checkbox label {
 }
 
 .checkbox input[type=checkbox]:checked+.checkbox-material .check {
-    background: #9c27b0;
+    background: #000;
 }
 
 .checkbox input[type=checkbox]:checked+.checkbox-material .check:before {
@@ -9979,7 +9979,7 @@ fieldset[disabled] .form-group.is-focused .radio label {
     height: 15px;
     width: 15px;
     border-radius: 100%;
-    background-color: #9c27b0;
+    background-color: #000;
     transform: scale3d(0, 0, 0);
 }
 
@@ -10024,11 +10024,11 @@ fieldset[disabled] .form-group.is-focused .radio label {
 }
 
 .radio input[type=radio]:checked~.check {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .radio input[type=radio]:checked~.circle {
-    border-color: #9c27b0;
+    border-color: #000;
 }
 
 .radio input[type=radio]:checked~.check {
@@ -10093,7 +10093,7 @@ fieldset[disabled] .form-group.is-focused .radio label {
 }
 
 .progress .progress-bar.progress-bar-primary {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .progress .progress-bar.progress-bar-success {
@@ -10138,7 +10138,7 @@ fieldset[disabled] .form-group.is-focused .radio label {
 
 .progress .progress-bar,
 .progress .progress-bar.progress-bar-default {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .togglebutton {
@@ -10228,7 +10228,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .togglebutton label input[type=checkbox]:checked+.toggle:after {
-    border-color: #9c27b0;
+    border-color: #000;
 }
 
 .togglebutton label input[type=checkbox]:checked+.toggle:active:after {
@@ -10284,7 +10284,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .full-page[filter-color="purple"].lock-page .form-group .form-control,
 .full-page[filter-color="primary"].lock-page .form-group .form-control {
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#000, #000), linear-gradient(#D2D2D2, #D2D2D2);
 }
 
 .full-page[filter-color="blue"]:after,
@@ -10551,7 +10551,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .register-page .card-signup .info-horizontal .icon.icon-primary {
-    color: #9c27b0;
+    color: #000;
 }
 
 .register-page .card-signup .info-horizontal .icon.icon-info {
@@ -10661,7 +10661,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
     display: inline-block;
     cursor: pointer;
     position: relative;
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .ng2-tag-input.filled-theme tag.readonly {
@@ -10732,7 +10732,7 @@ tag-input {
 }
 
 tag[_ngcontent-c4]:not(:focus):not(.tag--editing):not(:active):not(.readonly):hover {
-    background-color: #9c27b0 !important;
+    background-color: #000 !important;
     color: #FFFFFF !important;
 }
 
@@ -10852,7 +10852,7 @@ tag[_ngcontent-c4]:not(:focus):not(.tag--editing):not(:active):not(.readonly):ho
 }
 
 .timeline>li>.timeline-badge.primary {
-    background-color: #9c27b0;
+    background-color: #000;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
 
@@ -11057,8 +11057,8 @@ tag[_ngcontent-c4]:not(:focus):not(.tag--editing):not(:active):not(.readonly):ho
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-    background-color: #9c27b0;
-    border-color: #9c27b0;
+    background-color: #000;
+    border-color: #000;
     color: #FFFFFF;
     box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
 }
@@ -11154,7 +11154,7 @@ tag[_ngcontent-c4]:not(:focus):not(.tag--editing):not(:active):not(.readonly):ho
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
 .nav-pills>li.active>a:hover {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFFFFF;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
@@ -11640,7 +11640,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 }
 
 .navbar.navbar-primary {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #ffffff;
 }
 
@@ -11666,12 +11666,12 @@ fieldset[disabled] .navbar .btn-link:focus {
 .navbar.navbar-primary .dropdown-menu li>a:hover,
 .navbar.navbar-primary .dropdown-menu li>a:focus {
     color: #FFFFFF;
-    background-color: #9c27b0;
+    background-color: #000;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
 
 .navbar.navbar-primary .dropdown-menu .active>a {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #ffffff;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
@@ -12139,7 +12139,7 @@ footer .btn {
 .dropdown-menu li a:hover,
 .dropdown-menu li a:focus,
 .dropdown-menu li a:active {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFFFFF;
 }
 
@@ -12156,7 +12156,7 @@ footer .btn {
 .bootstrap-table .dropdown-menu li a:hover,
 .bootstrap-table .dropdown-menu li a:focus,
 .bootstrap-table .dropdown-menu li a:active {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFFFFF;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
@@ -12554,7 +12554,7 @@ footer .btn {
 }
 
 .card [data-icon-bg-color="purple"] i {
-    color: #9c27b0;
+    color: #000;
 }
 
 .card [data-background-color="blue"] {
@@ -12801,7 +12801,7 @@ footer .btn {
 }
 
 .card-pricing .icon.icon-primary {
-    color: #9c27b0;
+    color: #000;
 }
 
 .card-pricing .icon.icon-info {
@@ -13000,7 +13000,7 @@ footer .btn {
 }
 
 .nav-tabs {
-    background: #9c27b0;
+    background: #000;
     border: 0;
     border-radius: 3px;
     padding: 0 15px;
@@ -13939,7 +13939,7 @@ footer .btn {
 }
 
 .fixed-plugin .badge-purple {
-    background-color: #9c27b0;
+    background-color: #000;
 }
 
 .fixed-plugin .badge-red {

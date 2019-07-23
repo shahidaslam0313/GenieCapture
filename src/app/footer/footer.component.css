@@ -238,7 +238,9 @@ ab:hover {
     padding: 10px;
     border-radius: 100%;
 }
-
+.footerUl{
+  display:flex;flex-direction:row;justify-content:space-around
+}
 .input-group .input-group-btn {
     padding: 0;
 }

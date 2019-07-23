@@ -266,7 +266,8 @@
     }
 
     .home-paragraph {
-      font-size: 14px
+      font-size: 14px;
+      line-hight: 20px;
     }
 
     .how-paragraph {

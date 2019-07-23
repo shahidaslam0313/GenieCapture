@@ -12,7 +12,12 @@
     font-size: 15px;
     margin: 8px;
 }
-
+.contactInputs{
+  display:flex;flex-direction:column
+}
+.contactRecap{
+  display:flex;flex-direction:row;justify-content:space-between;padding: 20px;
+}
 #align {
     text-align: center;
 }

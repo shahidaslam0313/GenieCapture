@@ -12,7 +12,6 @@ import { ProgressHttpModule } from "angular-progress-http";
 import { UsMapModule } from 'angular-us-map';
 import {Nl2BrPipeModule} from 'nl2br-pipe';
 import { Ng2SmartTableModule } from 'ngx-smart-table';
-import { RfpService} from './rfps/single-rfp/rfp.service';
 import { LoginService} from './login/login.service';
 import { PricingService } from './pricing/pricing.service';
 import { RegisterService} from './registered/register.service';
@@ -72,7 +71,6 @@ import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-import { SingleRfpComponent } from './rfps/single-rfp/single-rfp.component';
 import { UserSidebarComponent } from './user-sidebar/user-sidebar.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { TextMaskModule } from 'angular2-text-mask';
@@ -231,7 +229,6 @@ export class MaterialModule {}
         AdminLayoutComponent,
         HomeComponent,
         HeaderComponent,
-        SingleRfpComponent,
         UserSidebarComponent,
         PricingComponent,
         PreloaderFull,
@@ -280,7 +277,6 @@ export class MaterialModule {}
         HomeService,
         HeaderService,
         ChangedPasswordService,
-        RfpService,
         SidebarService,
         LoginService,
         PricingService,

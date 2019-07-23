@@ -184,11 +184,11 @@ blockquote p {
 }
 
 .slider.noUi-connect {
-    background-color: #9c27b0
+    background-color: #000
 }
 
 .slider .noUi-handle {
-    border-color: #9c27b0
+    border-color: #000
 }
 
 .slider.slider-info .noUi-connect,
@@ -2105,7 +2105,7 @@ svg {
 
 .mat-calendar-body-selected,
 .mat-calendar-body-selected:hover {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFF;
     -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4)
@@ -2397,7 +2397,7 @@ body .fc {
 .open>.fc button.dropdown-toggle,
 .open>.fc button.dropdown-toggle:focus,
 .open>.fc button.dropdown-toggle:hover {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFF
 }
 
@@ -2466,7 +2466,7 @@ fieldset[disabled] .fc button:hover {
 .fc button.btn-primary.btn-simple,
 .fc button.btn-simple {
     background-color: transparent;
-    color: #9c27b0;
+    color: #000;
     -webkit-box-shadow: none;
     box-shadow: none
 }
@@ -2478,7 +2478,7 @@ fieldset[disabled] .fc button:hover {
 .fc button.btn-simple:focus,
 .fc button.btn-simple:hover {
     background-color: transparent;
-    color: #9c27b0
+    color: #000
 }
 
 .fc button[disabled],
@@ -3568,7 +3568,7 @@ footer ul li a:hover {
 .radio input[type=radio]:checked~.circle,
 .wizard-card[data-color=purple] .picture:hover,
 .wizard-card[data-color=purple] .radio input[type=radio]:checked~.circle {
-    border-color: #9c27b0
+    border-color: #000
 }
 
 .wizard-card .moving-tab {
@@ -3586,26 +3586,26 @@ footer ul li a:hover {
 }
 
 .wizard-card[data-color=purple] .moving-tab {
-    background-color: #9c27b0;
+    background-color: #000;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4)
 }
 
 .wizard-card[data-color=purple] .choice.active .icon,
 .wizard-card[data-color=purple] .choice:hover .icon {
-    border-color: #9c27b0;
-    color: #9c27b0
+    border-color: #000;
+    color: #000
 }
 
 .wizard-card[data-color=purple] .form-group .form-control {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9c27b0), to(#9c27b0)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
-    background-image: -webkit-linear-gradient(#9c27b0, #9c27b0), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: -o-linear-gradient(#9c27b0, #9c27b0), -o-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2)
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#000, #000), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#000, #000), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#000, #000), linear-gradient(#D2D2D2, #D2D2D2)
 }
 
 .wizard-card[data-color=purple] .checkbox input[type=checkbox]:checked+.checkbox-material .check,
 .wizard-card[data-color=purple] .radio input[type=radio]:checked~.check {
-    background-color: #9c27b0
+    background-color: #000
 }
 
 .wizard-card[data-color=green] .picture:hover,
@@ -4122,12 +4122,12 @@ h6 {
 .ct-series-d .ct-line,
 .ct-series-d .ct-point,
 .ct-series-d .ct-slice-donut {
-    stroke: #9c27b0
+    stroke: #000
 }
 
 .ct-series-d .ct-area,
 .ct-series-d .ct-slice-pie {
-    fill: #9c27b0
+    fill: #000
 }
 
 .ct-series-e .ct-bar,
@@ -4688,7 +4688,7 @@ h6 {
 }
 
 .ct-purple {
-    stroke: #9c27b0!important
+    stroke: #000!important
 }
 
 .ct-azure {
@@ -4800,7 +4800,7 @@ h2.title {
 }
 
 .text-primary {
-    color: #9c27b0
+    color: #000
 }
 
 .text-danger {
@@ -5209,7 +5209,7 @@ h2.title {
 }
 
 .sidebar[data-active-color=purple] li.active>a {
-    background-color: #9c27b0;
+    background-color: #000;
     -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4)
 }
@@ -5715,7 +5715,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn:hover {
 .open>.navbar .navbar-nav>li>a.btn.btn-primary.dropdown-toggle,
 .open>.navbar .navbar-nav>li>a.btn.btn-primary.dropdown-toggle:focus,
 .open>.navbar .navbar-nav>li>a.btn.btn-primary.dropdown-toggle:hover {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFF;
     padding: 7px 15px;
 }
@@ -5785,7 +5785,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-primary:hover {
 .btn.btn-primary.btn-simple,
 .navbar .navbar-nav>li>a.btn.btn-primary.btn-simple {
     background-color: transparent;
-    color: #9c27b0;
+    color: #000;
     -webkit-box-shadow: none;
     box-shadow: none
 }
@@ -5797,7 +5797,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-primary:hover {
 .navbar .navbar-nav>li>a.btn.btn-primary.btn-simple:focus,
 .navbar .navbar-nav>li>a.btn.btn-primary.btn-simple:hover {
     background-color: transparent;
-    color: #9c27b0
+    color: #000
 }
 
 .btn.btn-info,
@@ -6905,7 +6905,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-rose:hover {
 
 .btn-group-vertical.open>.dropdown-toggle.btn.btn-primary,
 .btn-group.open>.dropdown-toggle.btn.btn-primary {
-    background-color: #9c27b0
+    background-color: #000
 }
 
 .btn-group-vertical.open>.dropdown-toggle.btn.btn-success,
@@ -7058,7 +7058,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-rose:hover {
 @-webkit-keyframes color {
     0%,
     100% {
-        stroke: #9c27b0
+        stroke: #000
     }
     50% {
         stroke: #ff9800
@@ -7068,7 +7068,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-rose:hover {
 @keyframes color {
     0%,
     100% {
-        stroke: #9c27b0
+        stroke: #000
     }
     50% {
         stroke: #ff9800
@@ -7136,7 +7136,7 @@ h6 {
 
 
 /* a {
-    color: #9c27b0
+    color: #000
 }
 
 a:focus,
@@ -7492,7 +7492,7 @@ output {
 }
 
 .label.label-primary {
-    background-color: #9c27b0
+    background-color: #000
 }
 
 .label.label-success {
@@ -7518,10 +7518,10 @@ output {
 .form-control,
 .form-group .form-control {
     border: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9c27b0), to(#9c27b0)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
-    background-image: -webkit-linear-gradient(#9c27b0, #9c27b0), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: -o-linear-gradient(#9c27b0, #9c27b0), -o-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#000, #000), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#000, #000), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#000, #000), linear-gradient(#D2D2D2, #D2D2D2);
     background-size: 0 2px, 100% 1px;
     background-repeat: no-repeat;
     background-position: center bottom, center calc(100% - 1px);
@@ -8350,7 +8350,7 @@ select.form-control[multiple] {
 }
 
 .alert.alert-primary i {
-    color: #9c27b0
+    color: #000
 }
 
 .alert.alert-rose i {
@@ -8511,7 +8511,7 @@ select.form-control[multiple] {
 
 .table-shopping .td-name a:focus,
 .table-shopping .td-name a:hover {
-    color: #9c27b0
+    color: #000
 }
 
 .table-shopping .td-number small {
@@ -8708,7 +8708,7 @@ fieldset[disabled] .form-group.is-focused .checkbox label {
 }
 
 .checkbox input[type=checkbox]:checked+.checkbox-material .check {
-    background: #9c27b0
+    background: #000
 }
 
 .checkbox input[type=checkbox]:checked+.checkbox-material .check:before {
@@ -8829,7 +8829,7 @@ fieldset[disabled] .form-group.is-focused .radio label {
     height: 15px;
     width: 15px;
     border-radius: 100%;
-    background-color: #9c27b0;
+    background-color: #000;
     -webkit-transform: scale3d(0, 0, 0);
     transform: scale3d(0, 0, 0)
 }
@@ -8878,7 +8878,7 @@ fieldset[disabled] .form-group.is-focused .radio label {
 }
 
 .radio input[type=radio]:checked~.check {
-    background-color: #9c27b0;
+    background-color: #000;
     -webkit-transform: scale3d(.65, .65, 1);
     transform: scale3d(.65, .65, 1)
 }
@@ -8954,7 +8954,7 @@ fieldset[disabled] .form-group.is-focused .radio label {
 }
 
 .progress .progress-bar.progress-bar-primary {
-    background-color: #9c27b0
+    background-color: #000
 }
 
 .progress .progress-bar.progress-bar-success {
@@ -8999,7 +8999,7 @@ fieldset[disabled] .form-group.is-focused .radio label {
 
 .progress .progress-bar,
 .progress .progress-bar.progress-bar-default {
-    background-color: #9c27b0
+    background-color: #000
 }
 
 .togglebutton {
@@ -9083,7 +9083,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .togglebutton label input[type=checkbox]:checked+.toggle:after {
     left: 15px;
-    border-color: #9c27b0
+    border-color: #000
 }
 
 .togglebutton label input[type=checkbox]:checked+.toggle {
@@ -9140,10 +9140,10 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .full-page[filter-color=primary].lock-page .form-group .form-control,
 .full-page[filter-color=purple].lock-page .form-group .form-control {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9c27b0), to(#9c27b0)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
-    background-image: -webkit-linear-gradient(#9c27b0, #9c27b0), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: -o-linear-gradient(#9c27b0, #9c27b0), -o-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2)
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#000, #000), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#000, #000), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#000, #000), linear-gradient(#D2D2D2, #D2D2D2)
 }
 
 .full-page[filter-color=blue]:after,
@@ -9396,7 +9396,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .register-page .card-signup .info-horizontal .icon.icon-primary {
-    color: #9c27b0
+    color: #000
 }
 
 .register-page .card-signup .info-horizontal .icon.icon-info {
@@ -9498,7 +9498,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
     display: inline-block;
     cursor: pointer;
     position: relative;
-    background-color: #9c27b0!important;
+    background-color: #000!important;
     -webkit-transition: all 150ms ease-in;
     -o-transition: all 150ms ease-in;
     transition: all 150ms ease-in
@@ -9668,7 +9668,7 @@ tag-input {
 }
 
 .timeline>li>.timeline-badge.primary {
-    background-color: #9c27b0;
+    background-color: #000;
     -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4)
 }
@@ -9893,8 +9893,8 @@ tag-input {
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-    background-color: #9c27b0;
-    border-color: #9c27b0;
+    background-color: #000;
+    border-color: #000;
     color: #FFF;
     -webkit-box-shadow: 0 4px 5px 0 rgba(156, 39, 176, .14), 0 1px 10px 0 rgba(156, 39, 176, .12), 0 2px 4px -1px rgba(156, 39, 176, .2);
     box-shadow: 0 4px 5px 0 rgba(156, 39, 176, .14), 0 1px 10px 0 rgba(156, 39, 176, .12), 0 2px 4px -1px rgba(156, 39, 176, .2)
@@ -9995,7 +9995,7 @@ tag-input {
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
 .nav-pills>li.active>a:hover {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFF;
     -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4)
@@ -10466,7 +10466,7 @@ fieldset[disabled] .navbar .btn-link:hover {
 }
 
 .navbar.navbar-primary {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #fff
 }
 
@@ -10488,13 +10488,13 @@ fieldset[disabled] .navbar .btn-link:hover {
 .navbar.navbar-primary .dropdown-menu li>a:focus,
 .navbar.navbar-primary .dropdown-menu li>a:hover {
     color: #FFF;
-    background-color: #9c27b0;
+    background-color: #000;
     -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4)
 }
 
 .navbar.navbar-primary .dropdown-menu .active>a {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #fff;
     -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4)
@@ -10945,7 +10945,7 @@ footer .btn {
 .dropdown-menu li a:active,
 .dropdown-menu li a:focus,
 .dropdown-menu li a:hover {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFF
 }
 
@@ -10962,7 +10962,7 @@ footer .btn {
 .navbar.navbar-default .dropdown-menu li a:active,
 .navbar.navbar-default .dropdown-menu li a:focus,
 .navbar.navbar-default .dropdown-menu li a:hover {
-    background-color: #9c27b0;
+    background-color: #000;
     color: #FFF;
     -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4)
@@ -11360,7 +11360,7 @@ footer .btn {
 }
 
 .card [data-icon-bg-color=purple] i {
-    color: #9c27b0
+    color: #000
 }
 
 .card [data-background-color=blue] {
@@ -11621,7 +11621,7 @@ footer .btn {
 }
 
 .card-pricing .icon.icon-primary {
-    color: #9c27b0
+    color: #000
 }
 
 .card-pricing .icon.icon-info {
@@ -11797,7 +11797,7 @@ footer .btn {
 }
 
 .nav-tabs {
-    background: #9c27b0;
+    background: #000;
     border: 0;
     border-radius: 3px;
     padding: 0 15px
@@ -12801,7 +12801,7 @@ footer .btn {
 }
 
 .fixed-plugin .badge-purple {
-    background-color: #9c27b0
+    background-color: #000
 }
 
 .fixed-plugin .badge-red {

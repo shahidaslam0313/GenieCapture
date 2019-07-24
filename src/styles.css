@@ -3859,14 +3859,11 @@ text tspan {
     bottom: 2px
 }
 
-.reset-pass-palceholder .mat-input-infix {
-    padding: 1.075em 0 .275em;
+.reset-pass-palceholder .mat-form-field-placeholder {
+  top: 1.58125em;
 }
 
-.reset-pass-palceholder .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
-    transform: translateY(-3px) scale(.75) perspective(100px) translateZ(.001px);
-    -ms-transform: translateY(-1.28125em) scale(.75);
-}
+
 
 .admin-home-palceholder {
     margin-bottom: -30px;
@@ -4703,6 +4700,9 @@ min-height: 100px;
     text-align: center;
     padding: 0;
     cursor: pointer;
+}
+.cdk-overlay-pane{
+  min-width: 400px;
 }
 #show_sidebar{
   background: transparent !important;

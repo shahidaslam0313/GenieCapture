@@ -27,7 +27,7 @@ import {
 } from './dashboard-components/customers/customer.component';
 import { ContactUsComponent } from './dashboard-components/contact-us/contact.component';
 import { PaymentComponent } from './dashboard-components/payment-details/payment.component';
-
+import { DashboardDetailComponent } from './dashboarddetail/dashboarddetail.component';
 
 const ADMIN_ROUTER: Routes = [{
         path: '',
@@ -55,6 +55,10 @@ const ADMIN_ROUTER: Routes = [{
             },{
                 path:'payment-details',
                 component:PaymentComponent
+            },
+            {
+                path:'dashboarddetail',
+                component: DashboardDetailComponent
             }
 
         ]

@@ -56,7 +56,7 @@ import { SharedService } from './dashboard-services/shared.services';
 import { PaymentComponent } from './dashboard-components/payment-details/payment.component';
 import { SearchPaymentDialogComponent } from './dashboard-components/payment-details/payment-search-dialog/search.payment.dialog.component';
 
-
+import { DashboardDetailComponent } from './dashboarddetail/dashboarddetail.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -83,7 +83,8 @@ import { SearchPaymentDialogComponent } from './dashboard-components/payment-det
         HelpDeskComponent,
         SiteDeskDialogComponent,
         SearchSiteQueryDialog,
-        SearchPaymentDialogComponent
+        SearchPaymentDialogComponent,
+        DashboardDetailComponent
     ],
     entryComponents:[SearchPaymentDialogComponent,HelpDeskDialogComponent,SearchComponent,SearchSiteQueryDialog,SearchQueryDialogComponent,SiteDeskDialogComponent],
     providers: [

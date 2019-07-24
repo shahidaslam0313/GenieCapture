@@ -4,7 +4,7 @@ import {
 import {
     HttpClient
 } from '@angular/common/http';
-
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class DashboardService {
@@ -49,4 +49,9 @@ export class DashboardService {
     paymentDetails(email){
         return this.http.post(this.url+"adminpurchasehistory/",email)
     }
+    get_user_status() {
+
+        return this.http.get('https://apis.geniecapture.com/user/maindashboard/', );
+    }
+   
 }

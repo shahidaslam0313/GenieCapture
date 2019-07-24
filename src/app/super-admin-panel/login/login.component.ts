@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
             if (res["status"] == true) {
                 localStorage.setItem("iii-yyyy",btoa(res["email"]))
                 localStorage.setItem("xxx-yyy",btoa("wertysnsnndnndndmmmfmfmmfmmf8484994"))
-                this.router.navigate(['/admin/dashboard']);     
+                this.router.navigate(['/admin/dashboard/dashboarddetail']);     
             }
         })
     }

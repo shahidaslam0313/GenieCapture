@@ -4,7 +4,7 @@ import {
 import {
     HttpClient
 } from '@angular/common/http';
-
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class DashboardService {
@@ -50,13 +50,8 @@ export class DashboardService {
         return this.http.post(this.url+"adminpurchasehistory/",email)
     }
     get_user_status() {
-        let headers = new Headers({ 'Authorization': 'JWT ' + localStorage.getItem('currentUser') });
-    headers.append('Content-Type', 'application/json');
-        return this.http.get('https://apis.rfpgurus.com/super/maindashboard/', ).map((response: Response) => response.json());
+
+        return this.http.get('https://apis.geniecapture.com/user/maindashboard/', );
     }
-    hamzasaeed() {
-    //     let headers = new Headers({ 'Authorization': 'JWT ' + localStorage.getItem('currentUser') });
-    // headers.append('Content-Type', 'application/json');
-        return this.http.get('https://apis.geniecapture.com/payment/testreq/').map((response: Response) => response.json());
-    }
+   
 }

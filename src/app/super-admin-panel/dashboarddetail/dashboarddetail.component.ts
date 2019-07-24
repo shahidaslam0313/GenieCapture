@@ -18,7 +18,7 @@ export class DashboardDetailComponent  implements OnInit {
 
   ngOnInit() {
     this.viewuser()
-    this.hamzasaeed()
+    // this.hamzasaeed()
   }
   viewuser(){
    
@@ -26,22 +26,14 @@ export class DashboardDetailComponent  implements OnInit {
     this._serv.get_user_status().subscribe(
       data => {
           this.personal = data;
+          console.log(this.personal);
+          alert(this.personal);
    
           // console.log(this.personal['Total_Yearly_Subscriber'])
           // this.pager = this.pagerService.getPager(data['totalItems'], page, 20);
       });
   }
-  hamzasaeed(){
-   
-    // alert(page)
-    this._serv.hamzasaeed().subscribe(
-      data => {
-          this.personals = data;
-   console.log(data)
-          // console.log(this.personal['Total_Yearly_Subscriber'])
-          // this.pager = this.pagerService.getPager(data['totalItems'], page, 20);
-      });
-  }
+ 
 
   
 

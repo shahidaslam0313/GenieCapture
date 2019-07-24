@@ -651,6 +651,18 @@ h3 {
 .add-button button{
   max-width: 40%;
 }
+.card-holder{
+  top: 29px;left: 150px;
+}
+.support-placeholder >.row{
+  margin-top:70px
+}
+.cardType{
+  max-width: 200px; margin-right: auto;
+}
+.paymentMethods{
+  display:flex;flex-direction:row;justify-content: space-between
+}
 @media (max-width:540px){
   .table > thead > tr > th {
     padding: 2px !important;

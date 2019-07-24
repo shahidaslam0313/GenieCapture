@@ -9,7 +9,12 @@
       visibility: hidden;
       transition: .3s ease all 0s
     }
-
+    .fontBold{
+      font-weight: 700;
+    }
+    .fontNormal{
+      font-weight: 400;
+    }
     #wrapper,
     .search-holder {
       position: relative
@@ -23,6 +28,10 @@
     .align {
       padding-bottom: 20px;
       text-align: center;
+    }
+
+    .interest-area {
+      margin-top: 10px;
     }
 
     .search-holder {
@@ -267,7 +276,7 @@
 
     .home-paragraph {
       font-size: 14px;
-      line-hight: 20px;
+      line-height: 20px;
     }
 
     .how-paragraph {

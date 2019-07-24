@@ -14,7 +14,7 @@
                         <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47.834px" height="47.834px" viewBox="0 0 47.834 47.834" style="enable-background:new 0 0 47.834 47.834;">
                         </svg>
                     </div>
-                    <div class="card-holder" style="top: 29px;left: 150px;">
+                    <div class="card-holder" >
                         <label>Nickname</label>
                         <div>{{form.controls.nick_name.value}}</div>
                     </div>
@@ -51,8 +51,8 @@
             </div>
         </div>
         <form [formGroup]="form" class="support-placeholder">
-            <div class="rows" style="margin-top:70px">
-                <mat-form-field style="max-width: 200px; margin-right: auto;">
+            <div class="rows" >
+                <mat-form-field class="cardType">
                     <mat-select placeholder="Card-Type" [formControl]="var_type_atm" (change)="ShowButton(var_type_atm.value)">
                         <mat-option *ngFor="let card_get_datat of card_opeation" [value]="card_get_datat.value">
                             {{card_get_datat.viewValue}}</mat-option>
@@ -176,7 +176,7 @@
     </mat-card>
 </div>
 <div  class="methods">
-    <div style="display:flex;flex-direction:row;justify-content: space-between">
+    <div class="paymentMethods">
         <h4>Payment Methods</h4>
     </div>
     <mat-card class="cards mat-elevation-z7 " *ngIf="!addPayment">

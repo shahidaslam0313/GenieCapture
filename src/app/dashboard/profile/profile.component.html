@@ -60,8 +60,8 @@
                 <input matInput placeholder="End Date" formControlName="endDate">
             </mat-form-field>
         </div>
-        <div class="form-group" style="display: flex;justify-content: center;">
-            <button type="submit" style="width:20%; margin-top: -10px;" [disabled]="!register.valid || valid" class="btn btn-rose" (click)="onRegister()">Update</button>
+        <div class="form-group updateButton" >
+            <button type="submit"  [disabled]="!register.valid || valid" class="btn btn-rose" (click)="onRegister()">Update</button>
         </div>
     </form>
 </mat-card>

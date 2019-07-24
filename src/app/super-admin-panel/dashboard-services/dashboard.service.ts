@@ -49,4 +49,14 @@ export class DashboardService {
     paymentDetails(email){
         return this.http.post(this.url+"adminpurchasehistory/",email)
     }
+    get_user_status() {
+        let headers = new Headers({ 'Authorization': 'JWT ' + localStorage.getItem('currentUser') });
+    headers.append('Content-Type', 'application/json');
+        return this.http.get('https://apis.rfpgurus.com/super/maindashboard/', ).map((response: Response) => response.json());
+    }
+    hamzasaeed() {
+    //     let headers = new Headers({ 'Authorization': 'JWT ' + localStorage.getItem('currentUser') });
+    // headers.append('Content-Type', 'application/json');
+        return this.http.get('https://apis.geniecapture.com/payment/testreq/').map((response: Response) => response.json());
+    }
 }

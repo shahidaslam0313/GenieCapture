@@ -1,15 +1,15 @@
 <div class="sidebar-user sh-sidebar-user ">
         <nav>
-                <h3 style="text-align: center" class="sh-mt-70" *ngIf="check_login()">Search Filters</h3>
-                <h3 style="text-align: center" class="sh-mt-100" *ngIf="!check_login()">Search Filters</h3>
+                <h3  class="text-center sh-mt-70" *ngIf="check_login()">Search Filters</h3>
+                <h3  class="sh-mt-100 text-center" *ngIf="!check_login()">Search Filters</h3>
                 <!-- </div> -->
-                <div class="card-content sh-card-content" style="margin-top: -22px">
+                <div class="card-content sh-card-content ">
                 <form (ngSubmit)="onSubmit(f)" #f="ngForm" novalidate class="sh-sidebar-more-condense">
                 <div class="row">
                     <div class="col-sm-12">
                         <button type="submit" class="btn btn-primary btn-rose btn-lg sh-btn-fixed" title="Search">Refresh Results</button>
                     </div>
-                <div class="col-sm-12" style="margin-top: -5px">
+                <div class="col-sm-12 mgMinus5" >
                     <h4>Status</h4>
                 <mat-form-field>
                 <mat-select [(ngModel)]="status" name="status" (change)="onSubmit(f)">
@@ -19,7 +19,7 @@
                 </mat-select>
                 </mat-form-field>
                 </div>
-                <div class="col-sm-12" style="margin-top: -22px">
+                <div class="col-sm-12">
                     <h4>Posted Date From</h4>
                 <mat-form-field>
                 <input matInput (click)="picker.open()" name="enterdate" (focus)="picker.open()" [matDatepicker]="picker"
@@ -29,7 +29,7 @@
     
                 </mat-form-field>
                 </div>
-                <div class="col-sm-12" style="margin-top: -22px">
+                <div class="col-sm-12 margin-top: -22px" >
                     <h4>Posted Date to</h4>
                 <mat-form-field class="example-full-width mat-size">
                 <input matInput (click)="picker2.open()" name="duedate" (focus)="picker2.open()" [matDatepicker]="picker2"
@@ -38,11 +38,11 @@
                 <mat-datepicker #picker2></mat-datepicker>
                 </mat-form-field>
                 </div>
-                <div class="col-sm-12" style="margin-top: -22px">
+                <div class="col-sm-12 margin-top: -22px">
                     <h4>Search By State</h4>
                 <mat-form-field>
                 <mat-select [(ngModel)]="states" name="states" (change)="onSubmit(f)">
-                    <input  class="inp" type="text" [(ngModel)]="statsearch" [ngModelOptions]="{standalone: true}"  class="search-allstates" placeholder="Search By State" style="width: 100%; border-radius: 7px">
+                    <input  class="inp" type="text" [(ngModel)]="statsearch" [ngModelOptions]="{standalone: true}"  class="search-allstates" placeholder="Search By State" >
                     <i class="fa fa-search s-icon-all-states" area-hidden="true" ></i>
                     <mat-option value='all'>Select All</mat-option>
                     <mat-option  class="elips-mat-opt" *ngFor="let item of state |filter:statsearch" [value]="item.state" title="{{item.state}}">{{item.state}}</mat-option>
@@ -50,11 +50,11 @@
                 </mat-select>
                 </mat-form-field>
                 </div>
-                    <div class="col-sm-12" style="margin-top: -22px">
+                    <div class="col-sm-12 mgminus22">
                         <h4>Search By Agency</h4>
                         <mat-form-field>
                             <mat-select [(ngModel)]="agencies" name="agency" (change)="onSubmit(f)">
-                                <input class="inp" type="text" [(ngModel)]="agensearch" [ngModelOptions]="{standalone: true}" placeholder="Search By Agency"  class="search-allstates" style="width: 100%; border-radius: 7px;position: sticky">
+                                <input type="text" [(ngModel)]="agensearch" [ngModelOptions]="{standalone: true}" placeholder="Search By Agency"  class="search-allstates inp" >
                                 <i class="fa fa-search s-icon-all-states" area-hidden="true" ></i>
                                 <mat-option value='all'>Select All</mat-option>
                                 <mat-option class="elips-mat-opt" *ngFor="let item of agency| filter:agensearch" [value]="item.agency" title="{{item.agency}}">{{item.agency}}</mat-option>
@@ -62,20 +62,13 @@
                             </mat-select>
                         </mat-form-field>
                     </div>
-                    <!--<div class="col-sm-12">-->
-                        <!--<mat-form-field>-->
-                            <!--<mat-select [(ngModel)]="counties" name="county" placeholder="Search By County">-->
-                                <!--<mat-option *ngFor="let item of county" [value]="item.county">{{item.county}}</mat-option>-->
+
     
-                            <!--</mat-select>-->
-                        <!--</mat-form-field>-->
-                    <!--</div>-->
-    
-                <div class="col-sm-12" style="margin-top: -22px">
+                <div class="col-sm-12 mgminus22">
                     <h4>Search By Category</h4>
                 <mat-form-field>
                 <mat-select [(ngModel)]=cates name="cates" (change)="onSubmit(f)">
-                    <input class="inp" type="text" [(ngModel)]="catsearch" [ngModelOptions]="{standalone: true}" placeholder="Search By Category"  class="search-allstates" style="width: 100%; border-radius: 7px">
+                    <input class="inp" type="text" [(ngModel)]="catsearch" [ngModelOptions]="{standalone: true}" placeholder="Search By Category"  class="search-allstates" >
                     <i class="fa fa-search s-icon-all-states" area-hidden="true" ></i>
                     <mat-option value='all'>Select All</mat-option>
                     <mat-option class="elips-mat-opt" *ngFor="let catitem of cat" [value]="catitem.category| filter:catsearch" title="{{catitem.category}}">{{catitem.category}}</mat-option>
@@ -87,7 +80,7 @@
                 </div>
                 </form>
                 </div>
-            <ul class="list-category" style="margin-top: -10px">
+            <ul class="list-category" >
     
                 <li>
                     <h5>

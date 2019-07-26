@@ -3862,9 +3862,6 @@ text tspan {
 .reset-pass-palceholder .mat-form-field-placeholder {
   top: 1.58125em;
 }
-
-
-
 .admin-home-palceholder {
     margin-bottom: -30px;
 }
@@ -4738,6 +4735,9 @@ min-height: 100px;
 .mainFlex .mat-form-field-placeholder {
   top: 1.58125em;
 }
+
+
+
 @media (min-width:992px){
   #sidebar_visible{
     display: block !important;

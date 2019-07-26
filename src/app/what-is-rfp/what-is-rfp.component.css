@@ -66,8 +66,6 @@ span.bordered-icon:after {
     text-justify: inter-word;
     font-size: 16px;
     font-weight: bolder;
-    margin-left: 12px;
-    margin-left: 12px;
 }
 
 .square-icon {
@@ -97,4 +95,16 @@ span.bordered-icon:after {
 
 .icon-div {
     margin-bottom: 23px;
+}
+.mgRight25{
+  margin-right:25px;
+}
+.who-bg >.container{
+  width: 100%;
+}
+.what-is-geniecapture-img.tow{
+  margin-bottom:30px;
+}
+.whatImg{
+  margin-left: 5px; margin-top: 90px;
 }

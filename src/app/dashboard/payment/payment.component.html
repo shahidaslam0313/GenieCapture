@@ -106,19 +106,25 @@
               </div>
               <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput placeholder="Zip Code" maxlength="5" formControlName="zip_code" #zipcode1>
+                    <input matInput placeholder="Zip Code" maxlength="5" formControlName="zip_code" #zipcode1
+                    (ngModelChange)="zipcodeCheck(zipcode1.value)" #zipcode1  (keypress)="keyPress($event)" step="1" required (keydown.space)="$event.preventDefault()"
+                    >
                     <mat-error *ngIf="form.controls['zip_code'].invalid">
                         {{ zipCodeErrMsg() }}
                     </mat-error>
                 </mat-form-field>
+                <p class="clr_red" *ngIf="invalid  && !model.city && !model.state && !model.country">
+                    Invalid Zipcode
+                  </p>
+                  <p *ngIf="!invalid  && model.city && model.state && model.country">
+                  </p>
               </div>
+              
               <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput placeholder="City" type="text" formControlName="city">
+                    <input matInput placeholder="City" type="text" formControlName="city" readonly [(ngModel)]="model.city">
                     <mat-error *ngIf="form.controls.city.touched && form.controls.city.invalid">
-                        <mat-error *ngIf="form.controls.city.errors.required">
-                            City cannot be empty
-                        </mat-error>
+                    
 
                     </mat-error>
                 </mat-form-field>
@@ -126,21 +132,17 @@
               </div>
               <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput placeholder="State" type="text" formControlName="state">
+                    <input matInput placeholder="State" type="text" formControlName="state" readonly [(ngModel)]="model.state">
                     <mat-error *ngIf="form.controls.state.touched && form.controls.state.invalid">
-                        <mat-error *ngIf="form.controls.state.errors.required">
-                            State cannot be empty
-                        </mat-error>
+                      
                     </mat-error>
                 </mat-form-field>
               </div>
               <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput placeholder="Country" type="text" formControlName="country">
+                    <input matInput placeholder="Country" type="text" formControlName="country" readonly [(ngModel)]="model.country">
                     <mat-error *ngIf="form.controls.country.touched && form.controls.country.invalid">
-                        <mat-error *ngIf="form.controls.country.errors.required">
-                            Country cannot be empty
-                        </mat-error>
+                        
                     </mat-error>
                 </mat-form-field>
               </div>
@@ -168,6 +170,7 @@
               </div>
               <div class="col-sm-12 add-button text-center">
                     <button mat-raised-button class="btn-submit" (click)="proceed()" [disabled]="!form.valid || valid || verifyDate">Add</button>
+                    
               </div>
               
             </div>

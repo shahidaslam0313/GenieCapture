@@ -49,4 +49,8 @@ EditMethod(obj)
  .map((res: Response) =>(res.json()))
 
 }
+zipcode(zip) {
+   
+    return this._http5.get('https://apis.rfpgurus.com/zipcode/' + zip + '/').map((response: Response) => response.json());
+  }
 }

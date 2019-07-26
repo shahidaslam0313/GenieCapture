@@ -21,7 +21,7 @@ AddPaymentMethod(obj)
 {
     let headers = new Headers({'Authorization': 'JWT ' + this.currentUser.token});
     headers.append('Content-Type', 'application/json');
-        return this._http5.post("http://192.168.29.140:8000/user/SavedPayment/",obj).catch(this.error.errorHandler)
+        return this._http5.post("https://apis.geniecapture.com/user/SavedPayment/",obj).catch(this.error.errorHandler)
  .map((res: Response) =>(res.json()))
 
 }

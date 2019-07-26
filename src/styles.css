@@ -2440,7 +2440,6 @@ mat-tab-group .mat-tab-label {
 .about-main p {
     font-size: 20px;
     line-height: 30px;
-    font-weight: 700
 }
 
 .about-1 {
@@ -2449,15 +2448,9 @@ mat-tab-group .mat-tab-label {
     background-attachment: fixed;
     background-size: 100% auto;
     text-align: center;
-    padding: 50px 20px 10px;
+    padding: 20px;
     position: relative;
     z-index: 1
-}
-
-.about-1 .large {
-    font-size: 27px;
-    line-height: 45px;
-    padding: 0 40px 0 0
 }
 
 .about-1 .large strong {
@@ -2467,7 +2460,6 @@ mat-tab-group .mat-tab-label {
     font-weight: 500;
     margin: 0 0 20px
 }
-
 .about-1-sm,
 .about-4 h3 {
     font-weight: 400

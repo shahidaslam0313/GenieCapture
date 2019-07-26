@@ -495,6 +495,23 @@ plan
       }
     }, 1000);
   }
-
-
+  invalid;
+  model : any = {};
+  zipcodeCheck(zipcode1) {
+    if (zipcode1.length > 4) {
+      this.endRequest = this._serv.zipcode(zipcode1).subscribe(
+        data => {
+          this.model.city = data['city'];
+          this.model.state = data['state'];
+          this.model.country = data['country'];
+        },
+          error => {
+            error.status== 400
+            this.invalid=error.status;
+            delete this.model.city;
+            delete this.model.state;
+            delete this.model.country;
+      });
+    }
+  }
 }

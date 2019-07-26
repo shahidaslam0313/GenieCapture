@@ -198,7 +198,7 @@
                 <span *ngIf="plan=='0'">  Free 7-Day Trial </span>
                 </span>
                 <div>
-                    <img src="../assets/img/Yearlynew.png" alt="Yearly-Plan" width="300px" *ngIf="plan=='12'">
+                    <img src="../assets/img/Yearly.png" alt="Yearly-Plan" width="300px" *ngIf="plan=='12'">
                     <img src="../assets/img/Monthlynew.png" alt="Monthly-Plan" width="300px" *ngIf="plan=='1'">
                     <img src="../assets/img/Free.png" alt="Free-Plan" width="300px" *ngIf="plan=='0'">
                 </div>
@@ -353,37 +353,32 @@
                     </div>
                     <div class="payment-row">
                         <mat-form-field>
-                            <input matInput placeholder="Zip Code" maxlength="5" minlength=4 formControlName="zip_code" #zipcode1 required>
+                            <input matInput placeholder="Zip Code" maxlength="5" minlength=4 formControlName="zip_code" #zipcode1 required
+                            (ngModelChange)="zipcodeCheck(zipcode1.value)" #zipcode1  (keypress)="keyPress($event)" step="1" required (keydown.space)="$event.preventDefault()"
+                            >
                             <mat-error *ngIf="form.controls['zip_code'].invalid">
                                 {{ zipCodeErrMsg() }}
                             </mat-error>
                         </mat-form-field>
+                        <p class="clr_red" *ngIf="invalid  && !model.city && !model.state && !model.country">
+                            Invalid Zipcode
+                          </p>
+                          <p *ngIf="!invalid  && model.city && model.state && model.country">
+                          </p>
                         <mat-form-field>
-                            <input matInput placeholder="City" type="text" formControlName="city" required>
-                            <mat-error *ngIf="form.controls.city.touched && form.controls.city.invalid">
-                                <mat-error *ngIf="form.controls.city.errors.required">
-                                    City cannot be empty
-                                </mat-error>
-
-                            </mat-error>
+                            <input matInput placeholder="City" type="text" formControlName="city" readonly [(ngModel)]="model.city">
+                            
+                         
                         </mat-form-field>
                     </div>
                     <div class="payment-row">
                         <mat-form-field>
-                            <input matInput placeholder="State" type="text" formControlName="state" required>
-                            <mat-error *ngIf="form.controls.state.touched && form.controls.state.invalid">
-                                <mat-error *ngIf="form.controls.state.errors.required">
-                                    State cannot be empty
-                                </mat-error>
-                            </mat-error>
+                            <input matInput placeholder="State" type="text" formControlName="state" readonly  [(ngModel)]="model.state">
+                        
                         </mat-form-field>
                         <mat-form-field>
-                            <input matInput placeholder="Country" type="text" formControlName="country" required>
-                            <mat-error *ngIf="form.controls.country.touched && form.controls.country.invalid">
-                                <mat-error *ngIf="form.controls.country.errors.required">
-                                    Country cannot be empty
-                                </mat-error>
-                            </mat-error>
+                            <input matInput placeholder="Country" type="text" formControlName="country" readonly [(ngModel)]="model.country">
+                           
                         </mat-form-field>
                     </div>
                     <div class="payment-row">
@@ -409,6 +404,8 @@
                       </div>
                         <div class="col-sm-12 text-center p-2">
                             <button mat-raised-button class="btn-submit" (click)="proceed()" [disabled]="!form.valid || valid ||verifyDate">Place Order</button>
+                            <app-loader>
+                            </app-loader>
                         </div>
                       </div>
                 </form>
@@ -427,7 +424,11 @@
                         </mat-select>
                         <mat-error style="margin-top:5px;">Select Card</mat-error>
                     </mat-form-field>
+                    <div>
                     <button mat-raised-button class="btn-submit" (click)="placeOrder()" [disabled]="!defaultCards.valid || valid">Place Order</button>
+                    <app-loader>
+                    </app-loader>
+                    </div>
                 </form>
             </mat-card>
         </div>

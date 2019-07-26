@@ -423,7 +423,13 @@
       margin: 0 auto;
       background: #fff;
     }
-
+    .slider-div .item{
+      max-height:400px;
+    }
+    .slider-img{
+      max-height: 400px;
+      object-fit: contain;
+    }
     .slider-img {
       width: 100%;
       border-radius: 25px

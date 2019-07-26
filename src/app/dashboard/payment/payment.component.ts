@@ -405,7 +405,7 @@ export class PaymentComponent implements OnInit {
     }
     zipCodeErrMsg(){
       return this.form.controls['zip_code'].hasError('required') ? 'Zip Code cannot be empty' :
-      this.form.controls['zip_code'].hasError('pattern') ? 'Zip Code must be only in digits.' :   
+      // this.form.controls['zip_code'].hasError('pattern') ? 'Zip Code must be only in digits.' :   
       this.form.controls['zip_code'].hasError('minlength') ? ' Zip Code must be 5 digits long.' :
       '';
 

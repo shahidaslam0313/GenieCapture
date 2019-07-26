@@ -72,7 +72,8 @@ export class PaymentComponent implements OnInit {
 
   vin_Data = {
     "city": "",
-    "state": ""
+    "state": "",
+    "country" : ""
   };
   public cardmask = [/[0-9]/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
   min;
@@ -168,7 +169,9 @@ export class PaymentComponent implements OnInit {
       zip_code: new FormControl({
         value: '',
         disabled: true
-      }, [
+      }, 
+      
+      [
         Validators.maxLength(5),
         Validators.minLength(4),
         Validators.required,
@@ -403,8 +406,11 @@ export class PaymentComponent implements OnInit {
     zipCodeErrMsg(){
       return this.form.controls['zip_code'].hasError('required') ? 'Zip Code cannot be empty' :
       this.form.controls['zip_code'].hasError('pattern') ? 'Zip Code must be only in digits.' :   
-      this.form.controls['zip_code'].hasError('minlength') ? ' Zip Code must be atleast 4 digits long.' :
+      this.form.controls['zip_code'].hasError('minlength') ? ' Zip Code must be 5 digits long.' :
       '';
+
+
+      
     }
     expDateErrMsg(){
       return this.form.controls['cardexpiration'].hasError('required') ? ' Expiry date cannot be empty' :
@@ -417,5 +423,24 @@ export class PaymentComponent implements OnInit {
           this.form.controls['cardcode'].hasError('minlength') ? ' CVV must be atleast 3 digits long.' :
           this.form.controls['cardcode'].hasError('maxlength') ? 'CVV must be at atmost 4 digits long.' :
           '';
+    }
+    invalid;
+ model : any = {};
+    zipcodeCheck(zipcode1) {
+      if (zipcode1.length > 4) {
+        this.endRequest = this.paymentService.zipcode(zipcode1).subscribe(
+          data => {
+            this.model.city = data['city'];
+            this.model.state = data['state'];
+            this.model.country = data['country'];
+          },
+            error => {
+              error.status== 400
+              this.invalid=error.status;
+              delete this.model.city;
+              delete this.model.state;
+              delete this.model.country;
+        });
+      }
     }
 }

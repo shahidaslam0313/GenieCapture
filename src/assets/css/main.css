@@ -2519,15 +2519,15 @@ text tspan {
     padding: 5px
 }
 
-.payment-palceholder .mat-input-infix {
+.payment-placeholder .mat-input-infix {
     padding: 1.275em 0 .075em;
 }
 
-.payment-palceholder .mat-input-placeholder-wrapper {
+.payment-placeholder .mat-input-placeholder-wrapper {
     top: -.94375em;
 }
 
-.payment-palceholder .mat-select-value,
+.payment-placeholder .mat-select-value,
 .mat-select-trigger {
     bottom: 2px
 }

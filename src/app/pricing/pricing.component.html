@@ -351,25 +351,29 @@
                             </mat-error>
                         </mat-form-field>
                     </div>
-                    <div class="payment-row">
-                        <mat-form-field>
-                            <input matInput placeholder="Zip Code" maxlength="5" minlength=4 formControlName="zip_code" #zipcode1 required
-                            (ngModelChange)="zipcodeCheck(zipcode1.value)" #zipcode1  (keypress)="keyPress($event)" step="1" required (keydown.space)="$event.preventDefault()"
-                            >
-                            <mat-error *ngIf="form.controls['zip_code'].invalid">
-                                {{ zipCodeErrMsg() }}
-                            </mat-error>
-                        </mat-form-field>
-                        <p class="clr_red" *ngIf="invalid  && !model.city && !model.state && !model.country">
-                            Invalid Zipcode
-                          </p>
-                          <p *ngIf="!invalid  && model.city && model.state && model.country">
-                          </p>
-                        <mat-form-field>
-                            <input matInput placeholder="City" type="text" formControlName="city" readonly [(ngModel)]="model.city">
-                            
-                         
-                        </mat-form-field>
+                    <div class="payment-row zip">
+                      <div>
+                          <mat-form-field>
+                              <input matInput placeholder="Zip Code" maxlength="5" minlength=4 formControlName="zip_code" #zipcode1 required
+                              (ngModelChange)="zipcodeCheck(zipcode1.value)" #zipcode1  (keypress)="keyPress($event)" step="1" required (keydown.space)="$event.preventDefault()"
+                              >
+                              <mat-error *ngIf="form.controls['zip_code'].invalid">
+                                  {{ zipCodeErrMsg() }}
+                              </mat-error>
+                          
+                          </mat-form-field>
+                          <p class="clr_red" *ngIf="invalid  && !model.city && !model.state && !model.country">
+                              Invalid Zipcode
+                            </p>
+                            <p *ngIf="!invalid  && model.city && model.state && model.country">
+                            </p>
+                      </div>
+                      <div>
+                          <mat-form-field>
+                              <input matInput placeholder="City" type="text" formControlName="city" readonly [(ngModel)]="model.city">
+                          </mat-form-field>
+                      </div>
+
                     </div>
                     <div class="payment-row">
                         <mat-form-field>
@@ -410,7 +414,7 @@
                       </div>
                 </form>
             </mat-card>
-            <mat-card *ngIf="!isright" class="move-down payment-palceholder">
+            <mat-card *ngIf="!isright" class="move-down payment-placeholder">
                 <div class="spans">
                     <span *ngIf="isTrial">Your credit card should be validated not charged.</span>
                 </div>
@@ -424,7 +428,7 @@
                         </mat-select>
                         <mat-error style="margin-top:5px;">Select Card</mat-error>
                     </mat-form-field>
-                    <div>
+                    <div class="col-sm-12 text-center p-2">
                     <button mat-raised-button class="btn-submit" (click)="placeOrder()" [disabled]="!defaultCards.valid || valid">Place Order</button>
                     <app-loader>
                     </app-loader>

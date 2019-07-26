@@ -148,7 +148,7 @@
                     </mat-error>
                 </mat-form-field>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 zip">
                 <mat-form-field>
                     <input matInput placeholder="Zip Code" maxlength="5" formControlName="zip_code" #zipcode1
                     (ngModelChange)="zipcodeCheck(zipcode1.value)" #zipcode1  (keypress)="keyPress($event)" step="1" required (keydown.space)="$event.preventDefault()"

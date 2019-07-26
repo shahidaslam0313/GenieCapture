@@ -556,9 +556,7 @@ btn.btn-success.dropdown-toggle:focus,
     justify-content: center;
 }
 
-.move-down {
-    margin-bottom: 140px;
-}
+
 
 .pricing-tenure-switcher .pts-left,
 .pricing-tenure-switcher .pts-right {
@@ -630,7 +628,7 @@ btn.btn-success.dropdown-toggle:focus,
 }
 
 input:checked+.slider {
-    background-color: #cd0000;
+    background-color: #000;
 }
 
 .isTrials {
@@ -788,9 +786,22 @@ input:checked+.slider:before {
 .payment-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    min-height: 60px;
 }
-
+.payment-row.zip >div{
+  position: relative;
+  width: 48%;
+}
+.payment-row.zip >div p{
+  font-size: 11px;
+  position: absolute;
+  bottom: 0px;
+  color: #f44336;
+  font-weight: 600;
+  margin: 0;
+  left: 8px;
+}
 .button-row {
     display: flex;
     flex-direction: column;
@@ -1453,9 +1464,10 @@ mat-list-item {
   width: 100%;
   max-width: 700px;
 }
-.payment-palceholder{
+.payment-placeholder{
   max-width: 400px;
   margin: 20px auto;
+  height: 150px;
 }
 .card-type{
   max-width: 250px; 
@@ -1471,4 +1483,10 @@ mat-list-item {
 }
 .plan-type{
   width: 200px;
+}
+.move-down {
+  max-width: 400px;
+  margin: 20px auto 140px;
+  height: 150px;
+  padding: 30px 0 0;
 }

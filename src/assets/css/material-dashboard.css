@@ -13103,7 +13103,7 @@ footer .btn {
     border: none;
 }
 
-.payment-palceholder .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
+.payment-placeholder .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
     transform: translateY(-1px) scale(.75) perspective(100px) translateZ(.001px);
     -ms-transform: translateY(-1.28125em) scale(.75);
 }

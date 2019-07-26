@@ -3838,15 +3838,12 @@ text tspan {
     padding: 5px
 }
 
-.payment-palceholder .mat-input-infix {
-    padding: 1.275em 0 .075em;
-}
 
-.payment-palceholder .mat-input-placeholder-wrapper {
+.payment-placeholder .mat-input-placeholder-wrapper {
     top: -.94375em;
 }
 
-.payment-palceholder .mat-select-value,
+.payment-placeholder .mat-select-value,
 .mat-select-trigger {
     bottom: 2px
 }
@@ -4040,11 +4037,7 @@ text tspan {
 }
 
 
-/* .mat-select-panel .mat-option,
-.sh-pg-container .mat-select-panel .mat-optgroup-label {
-    line-height: 32px;
-    height: 30px
-} */
+
 
 .sh-pg-container .pagination,
 .sh-pg-container .sh-select-list {
@@ -4643,13 +4636,7 @@ body::-webkit-scrollbar-thumb:hover {
 .mat-input-subscript-wrapper {
   font-size: 11px;
 }
-.payment-card  .mat-form-field-placeholder {
-  top: 1.98125em;
-}
-.payment-card .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
-    transform: translateY(-15px) scale(.75) perspective(100px) translateZ(-0.999px);
-    -ms-transform: translateY(-15) scale(.75);
-}
+
 .plan-type .mat-form-field-infix {
   border-top: 0 solid transparent;
   padding: 6px 0;
@@ -4657,9 +4644,9 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #fff;
   padding: 0 5px;
 }
-.mat-select-panel .mat-optgroup-label, .mat-select-panel .mat-option {
-  line-height: 2em;
-  height: 2em;
+ .mat-select-panel .mat-option {
+  line-height: 2em !important;
+  height: 2em !important;
 }
 .Change-Password .mat-form-field-placeholder {
   top: 1.58125em;

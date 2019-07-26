@@ -6,7 +6,51 @@
 
     <mat-card class="layout mat-elevation-z7 mat-cards">
 
+
         <div [className]="flipclass">
+            <div class="flip">
+                <div class="front">
+                    <div class="chip"></div>
+                    <div class="logo"> <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47.834px"
+                            height="47.834px" viewBox="0 0 47.834 47.834"
+                            style="enable-background:new 0 0 47.834 47.834;">
+                            <g>
+                                <g> </g>
+                            </g>
+                        </svg> </div>
+                    <div class="card-holder sh"> <label>Nick Name</label>
+                        <div>{{form.controls.nick_name.value}}</div>
+                    </div>
+                    <div class="card-holder"> <label>Card Number</label>
+                        <div>{{form.controls.cardnumber.value}}</div>
+                    </div>
+                    <div class="card-expiration-date"> <label>Expiry Date</label>
+                        <div>{{form.controls.cardexpiration.value}}</div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="strip"></div>
+                    <div class="logo"> <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47.834px"
+                            height="47.834px" viewBox="0 0 47.834 47.834"
+                            style="enable-background:new 0 0 47.834 47.834;">
+                            <g>
+                                <g> </g>
+                            </g>
+                        </svg> </div>
+                    <div class="card-expiration-date"> <label>Expiry Date</label>
+                        <div>{{form.controls.cardexpiration.value}}</div>
+                    </div>
+                    <div class="cvv"> <label>CVV</label>
+                        <div>{{form.controls.cardcode.value}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div [className]="flipclass">
             <div class="flip">
                 <div class="front">
                     <div class="chip"></div>
@@ -49,7 +93,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <form [formGroup]="form" class="support-placeholder">
             <div class="rows" >
                 <mat-form-field class="cardType">

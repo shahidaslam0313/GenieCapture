@@ -38,7 +38,16 @@ export class HomeComponent implements OnInit{
   status;
   session;
   public items:object[] = [];
-
+  text:any = {
+    Year: 'Year',
+    Month: 'Month',
+    Weeks: "Weeks",
+    Days: "Days",
+    Hours: "Hrs",
+    Minutes: "Mins",
+    Seconds: "Secs",
+    MilliSeconds: "MilliSeconds"
+  };
 
   constructor(public _shareData: SharedData,public dialog: MatDialog) {
     this.items = [
@@ -69,9 +78,12 @@ export class HomeComponent implements OnInit{
   public carouselOne: NgxCarousel
 
   ngOnInit() { 
-   
+    setTimeout(() => {
+      this.openModal.nativeElement.click();
+    }, 200);
     this.Timer(1563009720000)
-   this.showPopUp(1563009720000)
+   this.showPopUp(1563009720000);
+   this.timers();
   }
   showPopUp(oldtime)
   {
@@ -107,7 +119,26 @@ check_login() {
       return false
     }
   }
-
+  totaltime;
+  timers(){
+    this._shareData.gettimer().subscribe( data => {
+ 
+      this.totaltime = data.json();
+      // alert(this.totaltime);
+      console.log(this.totaltime);
+   
+    })
+  }
+  check_login2() {
+    if (localStorage.getItem('iii-yyyy')) {
+      this.local = localStorage.getItem('iii-yyyy');
+      let pars = JSON.parse(this.local);
+      this.uname = pars.username;
+      return true;
+    } else {
+      return false;
+    }
+  }
   ngAfterContentInit() {
     this.carouselOne = {
       grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },

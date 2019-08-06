@@ -22,6 +22,9 @@ package_free(obj)
  .map((res: Response) =>(res.json()))
 
 }
+gettimer(){
+  return this._http5.get('https://apis.rfpgurus.com/super/timer_for_sale/')
+}
 zipcode(zip) {
    
     return this._http5.get('https://apis.rfpgurus.com/zipcode/' + zip + '/').map((response: Response) => response.json());

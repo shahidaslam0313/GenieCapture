@@ -58,6 +58,16 @@ export class PricingComponent implements OnInit {
   uname;
   date;
   session;
+  text:any = {
+    Year: 'Year',
+    Month: 'Month',
+    Weeks: "Weeks",
+    Days: "Days",
+    Hours: "Hrs",
+    Minutes: "Mins",
+    Seconds: "Secs",
+    MilliSeconds: "MilliSeconds"
+  };
 
   default: boolean = false;
   endRequest;
@@ -126,7 +136,8 @@ export class PricingComponent implements OnInit {
   showLoader;
   ngOnInit() {
     window.scrollTo(0, 0)
-    this.Timer(1563009720000)
+    this.Timer(1563009720000); 
+    this.timers();
     this.agent = "true";
     this.defaultCards = this.fb.group({
       selectedCard: [null, Validators.required]
@@ -266,6 +277,16 @@ export class PricingComponent implements OnInit {
     }
     return [/[01]/, /[0-9]/, '/', /[0-9]/, /[0123456789]/];
 
+  }
+  totaltime;
+  timers(){
+    this.alert.gettimer().subscribe( data => {
+ 
+      this.totaltime = data.json();
+      // alert(this.totaltime);
+      console.log(this.totaltime);
+   
+    })
   }
 plan
   selected(event: any) {

@@ -31,6 +31,8 @@ import {PreloaderService} from './serv/preloader-service';
 import {XHRBackend, RequestOptions} from '@angular/http';
 import {HttpService} from './serv/http-service';
 import { DashboardComponent } from './layouts/dashboard/dashboard.component';
+// import { CountdownModule } from 'ng2-countdown-timer';
+import { CountdownTimerModule } from 'ngx-countdown-timer';
 import 'hammerjs';
 import {
     MatAutocompleteModule,
@@ -44,6 +46,7 @@ import {
     MatExpansionModule,
     MatGridListModule,
      MatIconModule,
+ 
     MatInputModule,
     MatListModule,
     MatMenuModule,
@@ -201,6 +204,7 @@ export class MaterialModule {}
         ProgressHttpModule,
         Ng2SearchPipeModule,
         NgxCarouselModule,
+        CountdownTimerModule,
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyDPnJ0zatoiPOI1GOeeS7HCj7AxIW183tg'
         }),

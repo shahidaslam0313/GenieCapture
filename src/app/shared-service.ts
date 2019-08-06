@@ -33,7 +33,9 @@ export class SharedData {
   categoryInfo(data) {
     this.categorySubject.next(data);
   }
-
+  gettimer(){
+    return this.http2.get('https://apis.rfpgurus.com/super/timer_for_sale/')
+  }
   returnCat() {
     return this.categorySubject;
   }

@@ -54,9 +54,10 @@
                                   <app-recapcha></app-recapcha>
                                   <span class="error-block" *ngIf="isequal==false">*Please enter above text</span>
                               </div>
-                              <div>
-                                  <button type="button" class="btn btn-primary" [disabled]="!form.valid || valid" (click)="onSubmit()"><i aria-hidden="true" class="fa fa-arrow-up" title="Send Message"></i>Send
-                                  Message</button>
+                              <div class="send-message">
+                                  <button type="button" class="btn btn-primary" [disabled]="!form.valid || valid" (click)="onSubmit()">
+                                    <i aria-hidden="true" class="fa fa-arrow-up" title="Send Message"></i>Send Message
+                                  </button>
                               </div>
                           </div>
                       </div>

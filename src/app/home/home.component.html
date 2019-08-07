@@ -24,14 +24,18 @@
                     <button NgxCarouselPrev class="leftRs"> <i class="material-icons">keyboard_arrow_left</i></button>
                     <button NgxCarouselNext class="rightRs"> <i class="material-icons">keyboard_arrow_right</i></button>
                 </ngx-carousel>
-                <div class="sales col-lg-12 col-md-12 col-sm-12 col-xs-12" *ngIf="SaleOff">
-                    <div class="col-lg-7 col-md-4 col-sm-12 col-xs-12 text-center">
+            </div>
+        </section>
+  <section class="choose-criteria">
+               <!-- <div class="sales col-lg-12 col-md-12 col-sm-12 col-xs-12" *ngIf="SaleOff"> -->
+              <div class="sales col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                    <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12 text-center">
                         <h2 class="sale">Flash Sale - 50% Off only for a limited time.
                         </h2>
                         <h2 class="sale">Take advantage of this incredible offer NOW
                         </h2>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 aligns">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 aligns">
                         <div class="Timer">
                             <div class="datetime">
                                 <span class="time">{{Dayss}}</span>
@@ -54,10 +58,8 @@
                     <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12 aligns">
                         <button mat-raised-button class="sale-btn" routerLink="/pricing">Subscribe Now</button>
                     </div>
-                </div>
-            </div>
-        </section>
-
+              </div>
+  </section>
       
 
         <section>
@@ -118,7 +120,7 @@
                 </div>
             </div>
         </section>
-        <section class="choose-criteria" async>
+        <!-- <section class="choose-criteria" async>
             <div class="container-fluid">
               <div class="col-lg-7 col-md-8 col-sm-12">
                    
@@ -135,7 +137,7 @@
                 <a routerLink="/pricing"> <button class="Subscribe-btn">Subscribe Now</button></a>
               </div> 
             </div>
-          </section>
+          </section> -->
         <section class="interest-area" >
             <div class="container text-center">
                 <h2 class="text-center">How GenieCapture helps your organization create and consume Smart & Interactive e-Learning Content? </h2>
@@ -292,9 +294,9 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     src="../../assets/img/RFPGurus-Home-Screen-Logo.png"></div>
         </div> -->
         <div class="on-load-popup">
-            <div class="close-button"> <button type="button" class="close sh" data-dismiss="modal"
-                    aria-label="Close"> <span aria-hidden="true">&times;</span> </button></div>
-             <img src="../../../../assets/img/Popup-Banner.png">
+            <div class=" popupClose"> <button type="button" class="close sh" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times"></i> </button></div>
+             <img src="../../../assets/img/banner.png">
           
         </div>
         <div class="modal-footer">
@@ -305,8 +307,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               data-dismiss="modal">Subscribe
               Now</button> </a>
         </div>
-        <countdown-timer class="benner-conter mainpagee"  [text]="text" units=" Days | Hours | Minutes | Seconds" end="{{totaltime?.sale_timer}}"> </countdown-timer>
-
+        <countdown-timer class="benner-conter mainpagee"  [text]="text" units=" Days | Hours | Minutes | Seconds" end="'2019-08-10 00:00:00'"> </countdown-timer>
+        <!-- <countdown class="benner-conter mainpagee"  [text]="text" units=" Days | Hours | Minutes | Seconds" end="'2019-08-10 00:00:00'"> </countdown> -->
     </div>
 </div>
 </div>

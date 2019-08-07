@@ -14,6 +14,16 @@ declare var $:any;
 
 export class HomeComponent implements OnInit{
   @ViewChild('openModal') openModal: ElementRef;
+  text:any = {
+    Year: 'Year',
+    Month: 'Month',
+    Weeks: "Weeks",
+    Days: "Days",
+    Hours: "Hrs",
+    Minutes: "Mins",
+    Seconds: "Secs",
+    MilliSeconds: "MilliSeconds"
+  };
   endRequest;
   loaded = false;
   CategoryCheck=false;
@@ -37,18 +47,8 @@ export class HomeComponent implements OnInit{
   cates;
   status;
   session;
-  public items:object[] = [];
-  text:any = {
-    Year: 'Year',
-    Month: 'Month',
-    Weeks: "Weeks",
-    Days: "Days",
-    Hours: "Hrs",
-    Minutes: "Mins",
-    Seconds: "Secs",
-    MilliSeconds: "MilliSeconds"
-  };
 
+  public items:object[] = [];
   constructor(public _shareData: SharedData,public dialog: MatDialog) {
     this.items = [
       {

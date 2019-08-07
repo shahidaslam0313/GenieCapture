@@ -2,7 +2,7 @@
 </app-loader>
 
 <mat-card class="layout mat-elevation-z7">
-    <mat-card-header>
+    <mat-card-header >
         <mat-card-title>
             License Information
         </mat-card-title>
@@ -27,7 +27,7 @@
             </div>
             <div class="row">
                 <p class="col-sm-6 text">License Key Status</p>
-                <p class="col-sm-6" [ngClass]="{
+                <p class="col-sm-6 text-success" [ngClass]="{
                         'negative':personal.licence_status==false,
                         'positive':personal.licence_status==true}">{{status}}</p>
             </div>

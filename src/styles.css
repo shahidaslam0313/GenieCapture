@@ -4582,6 +4582,10 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 8px;
   color: #fff;
 }
+.nav-tabs > li > a{
+  text-transform: capitalize;
+}
+
 @media (min-width:992px) {
   #sidebar_visible {
     display: block !important

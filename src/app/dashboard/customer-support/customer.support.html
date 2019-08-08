@@ -21,7 +21,7 @@
                   <mat-error>Please select a query</mat-error>
               </mat-form-field>
               <mat-form-field *ngIf="isSubject">
-                  <input matInput placeholder="Subject" [formControl]=newsubject [(ngModel)]="topic" name=topic (input)="changeSubject($event)" required>
+                  <input class="text_captilize" matInput placeholder="Subject" [formControl]=newsubject [(ngModel)]="topic" name=topic (input)="changeSubject($event)" required>
                   <mat-error *ngIf="newsubject.hasError('required')">Please provide subject</mat-error>
               </mat-form-field>
   
@@ -29,10 +29,6 @@
                   <textarea matInput placeholder="Message" formControlName=message required></textarea>
                   <mat-error>Please provide message</mat-error>
               </mat-form-field>
-              <!-- <span class="btn-file file-input">Upload image or Other file
-                <input (change)="onChange($event)" type="file" accept="image/gif, image/jpeg, image/png"  #course_image  required> 
-                
-              </span> -->
               <button mat-raised-button type=button class="btn-submit" (click)="CustomerSupport()" [disabled]="disable || !form.valid">Submit</button>
           </form>
       </mat-card>

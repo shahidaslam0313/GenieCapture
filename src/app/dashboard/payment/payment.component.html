@@ -140,7 +140,7 @@
               </div>
               <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput placeholder="Street Address" maxlength="300" type="text" formControlName="str_add">
+                    <input class="text_captilize" matInput placeholder="Street Address" maxlength="300" type="text" formControlName="str_add">
                     <mat-error *ngIf="form.controls.str_add.touched && form.controls.str_add.invalid">
                         <mat-error *ngIf="form.controls.str_add.errors.required">
                             Street address cannot be empty
@@ -166,7 +166,7 @@
               
               <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput placeholder="City" type="text" formControlName="city" readonly [(ngModel)]="model.city">
+                    <input class="text_captilize" matInput placeholder="City" type="text" formControlName="city" readonly [(ngModel)]="model.city">
                     <mat-error *ngIf="form.controls.city.touched && form.controls.city.invalid">
                     
 
@@ -192,7 +192,7 @@
               </div>
               <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput type="text" placeholder="Nick Name" formControlName="nick_name">
+                    <input class="text_captilize" matInput type="text" placeholder="Nick Name" formControlName="nick_name">
                     <mat-error *ngIf="form.controls['nick_name'].invalid">
                         {{ nickNameErrMsg() }}
                     </mat-error>
@@ -200,7 +200,7 @@
               </div>
               <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput type="text" placeholder="Cardholder Name" formControlName="card_holder">
+                    <input class="text_captilize" matInput type="text" placeholder="Cardholder Name" formControlName="card_holder">
                     <mat-error *ngIf="form.controls['card_holder'].invalid">
                         {{ cardHolderErrMsg() }}
                     </mat-error>

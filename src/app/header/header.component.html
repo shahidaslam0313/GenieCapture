@@ -88,19 +88,19 @@
               </li>
               <li>
                 <a (click)="logout()">
-                  <i class="fa fa-lock"></i><span >Sign out</span></a>
+                  <i class="fa fa-lock"></i><span >Sign Out</span></a>
               </li>
             </ul>
           </div>
         </li>
         <li *ngIf="!check_login()">
           <a routerLink="/login"  routerLinkActive="Active">
-            <i class="material-icons">fingerprint</i>Sign in
+            <i class="fa fa-sign-in"></i>Sign In
           </a>
         </li>
         <li *ngIf="!check_login()">
           <a routerLink="/sign-up" routerLinkActive="Active">
-            <i class="fa fa-unlock" aria-hidden="true"></i>Sign up
+            <i class="fa fa-unlock" aria-hidden="true"></i>Sign Up
           </a>
         </li>
       </ul>

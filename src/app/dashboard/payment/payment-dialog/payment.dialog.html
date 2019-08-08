@@ -4,7 +4,7 @@
 <form [formGroup]="form">
     <div mat-dialog-content class="dialog-layout">
         <mat-form-field>
-            <input matInput type="text" placeholder="Nick Name" maxlength="12" formControlName="nick_name">
+            <input class="text_captilize" matInput type="text" placeholder="Nick Name" maxlength="12" formControlName="nick_name">
             <mat-error *ngIf="form.controls.nick_name.touched && form.controls.nick_name.invalid">
                 <mat-error *ngIf="form.controls.nick_name.errors.required">
                     Nick name cannot be empty
@@ -61,7 +61,7 @@
           <p *ngIf="!invalid  && model.city && model.state && model.country">
           </p>
         <mat-form-field>
-            <input matInput placeholder="City" type="text" formControlName="city" readonly [(ngModel)]="model.city">
+            <input class="text_captilize" matInput placeholder="City" type="text" formControlName="city" readonly [(ngModel)]="model.city">
          
         </mat-form-field>
      

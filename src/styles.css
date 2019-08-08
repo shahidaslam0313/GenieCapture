@@ -583,8 +583,8 @@ body {
 
 .terms-and-condition p {
   text-align: left;
-  line-height: 18px;
-  font-size: 13px
+  line-height: 18px !important;
+  font-size: 12px;
 }
 
 .term-address p {
@@ -4453,7 +4453,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .signup_login .mat-form-field-placeholder {
-  top: 1.98125em
+  top: 1.68125em
 }
 
 .signup_login .mat-input-element {
@@ -4461,10 +4461,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .signup_login .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
-  transform: translateY(-1.98125em) scale(.75) perspective(100px) translateZ(.001px);
-  -ms-transform: translateY(-1.98125em) scale(.75)
+  transform: translateY(-1.48125em) scale(.75) perspective(100px) translateZ(.001px);
+  -ms-transform: translateY(-1.48125em) scale(.75)
 }
-
 .mat-input-subscript-wrapper {
   font-size: 11px;
   margin-top: 5px;
@@ -4499,13 +4498,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .mainFlex textarea.mat-input-element {
-  min-height: 100px
+  min-height: 100px;
 }
-
+textarea.mat-input-element {
+  font-size: 14px;
+  font-weight: normal;
+}
 .mat-form-field-type-mat-select .mat-form-field-flex {
   height: 30px
 }
-
 .close-button {
   text-align: right;
   margin-right: -7px;
@@ -4585,7 +4586,59 @@ body::-webkit-scrollbar-thumb:hover {
 .nav-tabs > li > a{
   text-transform: capitalize;
 }
+.text_captilize{
+  text-transform: capitalize;
+}
+.color-red{
+  color: #c00;
+}
+.take_advantage .color-red{
+  font-size: 30px;
+}
+.header-form{
+  background: #000;
+  box-shadow: 0 2px 5px #ccc;
+  margin-top: -20px;
+  margin-left: 15px;
+  border-radius: 5px;
 
+}
+.header-form h3{
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+.margin-0{
+  margin: 0;
+}
+.mat-form-field-suffix {
+  color: rgba(0, 0, 0, .54) !important;
+}
+.header-pricing {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: center;
+  padding: 5px;
+  background-color: #f4f4f7;
+  border-radius: 5px;
+
+}
+.header-pricing .mat-input-wrapper{
+  padding: 0;
+}
+.header-pricing .mat-form-field-underline{
+  display: none;
+}
 @media (min-width:992px) {
   #sidebar_visible {
     display: block !important

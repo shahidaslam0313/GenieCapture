@@ -453,30 +453,33 @@
             </form>
           </mat-card>
 
-          <mat-card *ngIf="!isright" class="move-down payment-placeholder">
+          <div *ngIf="!isright" class="move-down payment-placeholder row">
             <div class="spans">
               <span *ngIf="isTrial">Your credit card should be validated not charged.</span>
             </div>
-    
-            <form [formGroup]="defaultCards">
-              <mat-form-field class="pricing-select">
-                <mat-select [(ngModel)]="toSelect" [ngModelOptions]="{standalone: true}" required
-                  formControlName="selectedCard" placeholder="Select method from list" (change)="cardSelected($event)"
-                  required>
-                  <mat-option *ngFor="let t of cardType" [value]="t">
-                    {{t.nick_name}}
-                  </mat-option>
-                </mat-select>
-                <mat-error style="margin-top:5px;">Select Card</mat-error>
-              </mat-form-field>
-              <div class="col-sm-12 text-center p-2">
+            <div class="col-sm-12">
+                <form [formGroup]="defaultCards">
+                    <mat-form-field class="pricing-select">
+                      <mat-select [(ngModel)]="toSelect" [ngModelOptions]="{standalone: true}" required
+                        formControlName="selectedCard" placeholder="Select method from list" (change)="cardSelected($event)"
+                        required>
+                        <mat-option *ngFor="let t of cardType" [value]="t">
+                          {{t.nick_name}}
+                        </mat-option>
+                      </mat-select>
+                      <mat-error style="margin-top:5px;">Select Card</mat-error>
+                    </mat-form-field>
+                      <app-loader>
+                      </app-loader>
+                   
+                  </form>
+            </div>
+          
+            <div class="col-sm-12 text-center p2">
                 <button mat-raised-button class="btn-submit" (click)="placeOrder()"
                   [disabled]="!defaultCards.valid || valid">Place Order</button>
-                <app-loader>
-                </app-loader>
+                </div>
               </div>
-            </form>
-          </mat-card>
         </div>
       </div>
 

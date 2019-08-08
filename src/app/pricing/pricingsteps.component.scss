@@ -464,7 +464,7 @@ input:checked+.slider {
 
 .isTrials {
   margin-top: 100px;
-  margin-bottom: 3px
+  margin-bottom: 3px;
 }
 
 .stay {
@@ -494,7 +494,7 @@ input:checked+.slider {
 .spans {
   color: #020202;
   text-align: center;
-  font-weight: 500
+  font-weight: 500;
 }
 
 input:focus+.slider {
@@ -1212,7 +1212,6 @@ mat-list-item {
 .payment-placeholder {
   max-width: 400px;
   margin: 20px auto;
-  height: 150px
 }
 
 .card-type {
@@ -1228,8 +1227,10 @@ mat-list-item {
 .move-down {
   max-width: 400px;
   margin: 20px auto 140px;
-  height: 150px;
-  padding: 30px 0 0
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 5px;
 }
 .planSelect{
   padding: 20px;

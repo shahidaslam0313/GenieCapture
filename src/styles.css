@@ -3531,8 +3531,9 @@ hr {
 }
 
 .custom-model {
-  width: 70%;
-  z-index: 9
+  width: 100%;
+  z-index: 9;
+  max-width: 700px;
 }
 
 .custom-model .modal-body {
@@ -4825,5 +4826,12 @@ body {
 .mainpagee .countdown .measurements {
   padding: 5px 10px !important;
 }
-
+@media (max-width: 768px){
+.navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+}
 /* End conter */

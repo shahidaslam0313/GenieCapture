@@ -82,17 +82,17 @@
   
             <li>
               <a routerLink="/features-comparison">
-                <i class="material-icons">insert_chart</i>Features Comparison
+                <i class="fa fa-bar-chart left-icon"></i>Features Comparison
               </a>
             </li>
             <li *ngIf="!check_login()">
               <a routerLink="/login">
-                <i class="fa fa-sign-in"></i>Sign In
+                <i class="fa fa-sign-in left-icon"></i>Sign In
               </a>
             </li>
             <li *ngIf="!check_login()">
               <a routerLink="/sign-up">
-                <i class="fa fa-unlock left-icon " aria-hidden="true"></i>Sign Up
+                <i  aria-hidden="true" class="fa fa-unlock   left-icon"></i>Sign Up
               </a>
             </li>
           </ul>
